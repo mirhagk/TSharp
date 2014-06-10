@@ -1,0 +1,62 @@
+unit
+  importSection
+    import
+      memberCall
+        TuringDotNet (identifier)
+        Window (identifier)
+      TuringDotNet.dll (stringLiteral)
+    import
+      memberCall
+        TuringDotNet (identifier)
+        Draw (identifier)
+      TuringDotNet.dll (stringLiteral)
+    import
+      memberCall
+        System (identifier)
+        memberCall
+          Drawing (identifier)
+          Color (identifier)
+      System.Drawing.dll (stringLiteral)
+  program
+    statement
+      forLoop
+        optDecreasing
+        i (identifier)
+        range
+          1 (number)
+          10 (number)
+        optIncrementBy
+        program
+    program
+      statement
+        memberCall
+          TuringDotNet (identifier)
+          memberCall
+            Window (identifier)
+            functionCall
+              Open (identifier)
+              args
+                graphics:500;500 (stringLiteral)
+      program
+        statement
+          memberCall
+            TuringDotNet (identifier)
+            memberCall
+              Draw (identifier)
+              functionCall
+                FillOval (identifier)
+                args
+                  100 (number)
+                  100 (number)
+                  50 (number)
+                  50 (number)
+                  memberCall
+                    System (identifier)
+                    memberCall
+                      Drawing (identifier)
+                      memberCall
+                        Color (identifier)
+                        functionCall
+                          get_Black (identifier)
+                          args
+        program

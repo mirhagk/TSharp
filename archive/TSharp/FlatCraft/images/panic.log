@@ -1,0 +1,180 @@
+*** FATAL INTERNAL ERROR in Turing ***
+Date: Jan 11 2012 4:30 PM
+
+File Name: C:\Users\Jon\Desktop\package (1)\turing.exe
+Version: 1.0.0  [11]
+File Size: 4575744
+File Date: Nov 29 2011 3:55 AM
+Operating System: After Windows XP
+JVM: Ready Built-in JRE (1.4.2 or later)
+"assert" Statements: disabled
+
+
+Previous Operations:
+    Deallocating object 7051 (free=1)
+    Deallocating object 7050 (free=1)
+    Deallocating object 7049 (free=1)
+    Deallocating object 7048 (free=1)
+    Deallocating object 7047 (free=1)
+    Deallocating object 7046 (free=1)
+    Deallocating object 7045 (free=1)
+    Deallocating object 7044 (free=1)
+    Deallocating object 7043 (free=1)
+    Deallocating object 7042 (free=1)
+    Deallocating object 7041 (free=1)
+    Deallocating object 7040 (free=1)
+    Deallocating object 7039 (free=1)
+    Deallocating object 7038 (free=1)
+    Deallocating object 7037 (free=1)
+    Deallocating object 7036 (free=1)
+    Deallocating object 7035 (free=1)
+    Deallocating object 7034 (free=1)
+    Deallocating object 7033 (free=1)
+    Deallocating object 7032 (free=1)
+    Deallocating object 7031 (free=1)
+    Deallocating object 7030 (free=1)
+    Deallocating object 7029 (free=1)
+    Deallocating object 7028 (free=1)
+    Deallocating object 7027 (free=1)
+    Deallocating object 7026 (free=1)
+    Deallocating object 7025 (free=1)
+    Deallocating object 7024 (free=1)
+    Deallocating object 7023 (free=1)
+    Deallocating object 7022 (free=1)
+    Deallocating object 2 (free=1)
+    Deallocating object 7021 (free=1)
+    Deallocating object 7020 (free=1)
+    Deallocating object 7019 (free=1)
+    Deallocating object 7018 (free=1)
+    Deallocating object 7017 (free=1)
+    Deallocating object 7016 (free=1)
+    Deallocating object 7015 (free=1)
+    Deallocating object 7014 (free=1)
+    Deallocating object 7013 (free=1)
+    Deallocating object 7012 (free=1)
+    Deallocating object 7011 (free=1)
+    Deallocating object 7010 (free=1)
+    Deallocating object 7009 (free=1)
+    Deallocating object 7008 (free=1)
+    Deallocating object 7007 (free=1)
+    Deallocating object 7006 (free=1)
+    Deallocating object 7005 (free=1)
+    Deallocating object 7004 (free=1)
+    Deallocating object 1 (free=1)
+    Deallocating object 5003 (free=1)
+    Deallocating object 5002 (free=1)
+    Deallocating object 5001 (free=1)
+    Deallocating object 0 (free=1)
+    Deallocating object -1 (free=1)
+    Deallocating object -2 (free=1)
+    MIO_Init_Run called
+    MIO_Init_Free called
+    Debugger Notify Init Run
+    Create standard input/output window
+    MIOWin_CreateWindowFromAttribs (No Title)
+    MIOWin_InitializeWindow: Create button bar
+    MIOWin_InitializeWindow: Create inner grph win
+  CMD: WM_ACTIVATE (W)
+    MIOWin_InitializeWindow: Window initialized
+    Object Allocated 11 -2
+    Object Allocated 11 -1
+    Create standard error window
+    MIOWin_CreateWindowFromAttribs (Standard Error)
+    MIOWin_InitializeWindow: Create button bar
+    MIOWin_InitializeWindow: Create inner text win
+    MIOWin_InitializeWindow: Window initialized
+    Object Allocated 11 0
+    Object Allocated 20 5001
+    Object Allocated 20 5002
+    Object Allocated 20 5003
+    Object Allocated 10 1
+    Object Freed 1
+    Object Allocated 10 1
+    Object Freed 1
+    Create window (Attr: graphics:801;641, offscreenonly)
+    MIOWin_CreateWindowFromAttribs (No Title)
+    MIOWin_InitializeWindow: Create button bar
+    MIOWin_InitializeWindow: Create inner grph win
+    MIOWin_InitializeWindow: Window initialized
+    Run Window Added 480434 
+    Object Allocated 11 1
+    Object Allocated 22 7004
+    Debugger Notify Finalize Run
+    Object Freed 5001
+    Object Freed 5002
+    Object Freed 5003
+    Object Freed 7004
+    Object Freed -1
+    Find Next Error (1) - Text: 204a4 - Activate: 1
+  CMD: WM_ACTIVATE (W)
+    Set Selection (1) - Text: 499e520 - L: 98 - C: 0
+    Text - sz:2232:111295 - slFr:2139:16:105960 - slTo:2139:16:105960 - nlA:0
+    Line Starts: 2229:111251 2230:111273 2231:111286 2232:111295
+    Set Selection (2) - sz:2232:111295 - slFr:3590 - slTo:3590 - nlA:0
+    Line Starts: 2229:111251 2230:111273 2231:111286 2232:111295
+    Goto Error - sz:2232:111295 - slFr:3590 - slTo:3590 - nlA:0
+  CMD: WM_INITMENU (W)
+  CMD: COMMAND_SAVE_FILE
+    Save File (1) - Window: 204a4 - SaveAs: 0 - Sel: 0 - fileno: 43 - sizeptr: 64e1c0
+    Save File (2) - name: H:\FlatCraft\flatcraft.t - fileno: 43 - sizeptr: 64e1c0
+  CMD: WM_SETFOCUS (W)
+  CMD: COMMAND_RUN
+    Run (1) - Window: 204a4 - Ex: 1 - Args: 0 - Step: 0
+    Turing Language Freeing Memory
+    MIO_Init_Free called
+    Notify All Run Windows Closed
+    Object Freed 1
+    Object Freed 0
+    Debugger Notify Init Run
+    Deallocating object 7004 (free=1)
+    Deallocating object 1 (free=1)
+    Deallocating object 5003 (free=1)
+    Deallocating object 5002 (free=1)
+    Deallocating object 5001 (free=1)
+    Deallocating object 0 (free=1)
+    Deallocating object -1 (free=1)
+    Deallocating object -2 (free=1)
+    MIO_Init_Run called
+    MIO_Init_Free called
+    Debugger Notify Init Run
+    Create standard input/output window
+    MIOWin_CreateWindowFromAttribs (No Title)
+    MIOWin_InitializeWindow: Create button bar
+    MIOWin_InitializeWindow: Create inner grph win
+  CMD: WM_ACTIVATE (W)
+    MIOWin_InitializeWindow: Window initialized
+    Object Allocated 11 -2
+    Object Allocated 11 -1
+    Create standard error window
+    MIOWin_CreateWindowFromAttribs (Standard Error)
+    MIOWin_InitializeWindow: Create button bar
+    MIOWin_InitializeWindow: Create inner text win
+    MIOWin_InitializeWindow: Window initialized
+    Object Allocated 11 0
+    Object Allocated 20 5001
+    Object Allocated 20 5002
+    Object Allocated 20 5003
+    Object Allocated 10 1
+    Object Freed 1
+    Object Allocated 10 1
+    Object Freed 1
+    Create window (Attr: graphics:801;641, offscreenonly)
+    MIOWin_CreateWindowFromAttribs (No Title)
+    MIOWin_InitializeWindow: No room for info
+
+
+
+The environment has experienced an unexpected internal error.
+
+This error is caused by a bug in the environment and is not your fault!
+Details about the crash have been saved in the file "H:\FlatCraft\images\panic.log".
+
+If possible, please e-mail this file to trishume@me.com
+
+Here are some details about the error:
+   Error = GetWindowLong failed (8) (15001)
+   File = ..\src\mdiowin.c
+   Line = 580
+
+All unsaved open files will be saved with a ".sav" or ".sv#" extension.
+------------------------------------------------------

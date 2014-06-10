@@ -1,0 +1,12 @@
+c:\users\mirhagk\documents\visual studio 11\Projects\TSharp\TSharp\bin\Debug\TSharp.exe.config
+c:\users\mirhagk\documents\visual studio 11\Projects\TSharp\TSharp\bin\Debug\TSharp.exe
+c:\users\mirhagk\documents\visual studio 11\Projects\TSharp\TSharp\bin\Debug\TSharp.pdb
+c:\users\mirhagk\documents\visual studio 11\Projects\TSharp\TSharp\obj\Debug\TSharp.csprojResolveAssemblyReference.cache
+c:\users\mirhagk\documents\visual studio 11\Projects\TSharp\TSharp\obj\Debug\TSharp.exe
+c:\users\mirhagk\documents\visual studio 11\Projects\TSharp\TSharp\obj\Debug\TSharp.pdb
+C:\Users\mirhagk\SkyDrive\programming\TSharp\TSharp\bin\Debug\TSharp.exe.config
+C:\Users\mirhagk\SkyDrive\programming\TSharp\TSharp\obj\Debug\TSharp.exe
+C:\Users\mirhagk\SkyDrive\programming\TSharp\TSharp\obj\Debug\TSharp.pdb
+C:\Users\mirhagk\SkyDrive\programming\TSharp\TSharp\obj\Debug\TSharp.csprojResolveAssemblyReference.cache
+C:\Users\mirhagk\SkyDrive\programming\TSharp\TSharp\bin\Debug\TSharp.exe
+C:\Users\mirhagk\SkyDrive\programming\TSharp\TSharp\bin\Debug\TSharp.pdb

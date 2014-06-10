@@ -1,0 +1,14 @@
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\TuringGrammar.dll
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\TuringGrammar.pdb
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\Irony.dll
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\Irony.pdb
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Debug\TuringGrammar.dll
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Debug\TuringGrammar.pdb
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\TuringGrammar.dll
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\TuringGrammar.pdb
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\Irony.dll
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Debug\Irony.pdb
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Debug\TuringGrammar.csprojResolveAssemblyReference.cache
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Debug\TuringGrammar.dll
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Debug\TuringGrammar.pdb
+C:\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Debug\ResolveAssemblyReference.cache

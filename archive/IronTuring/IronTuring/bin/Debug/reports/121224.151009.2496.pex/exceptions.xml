@@ -1,0 +1,151 @@
+﻿<frameTree version="0.94.51006.1"><frameException type="System.ArgumentNullException"><tag exceptionState="unexpected"><generatedTestRef idref="b3a806c0-362e-4ba1-bf3c-d929f73c946c"/>
+</tag>
+<frameNode><frame value="  at AssemblyName..ctor(String)" method="AssemblyName..ctor(String)" offset="19"><method assemblyName="mscorlib" name=".ctor" token="600269e"><declaringType assemblyName="mscorlib" name="AssemblyName" token="2000400" namespace="System.Reflection"/>
+<parameter this="true" name="this" position="0"><type spec="Class"><definition assemblyName="mscorlib" name="AssemblyName" token="2000400" namespace="System.Reflection"/>
+</type>
+</parameter>
+<parameter name="assemblyName" position="1"><type spec="Class"><definition assemblyName="mscorlib" name="String" token="200004e" namespace="System"/>
+</type>
+</parameter>
+</method>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="b3a806c0-362e-4ba1-bf3c-d929f73c946c"/>
+<generatedTestRef idref="c6a7f04f-e0c2-4ff5-8c3c-5b00d936067a"/>
+</tag>
+<frameNode><frame value="  at CodeGenOld..ctor(ParseTreeNode, String) in C:\skydrive\programming\IronTuring\IronTuring\CodeGenOld.cs(113)" method="CodeGenOld..ctor(ParseTreeNode, String)" offset="58" file="C:\skydrive\programming\IronTuring\IronTuring\CodeGenOld.cs" line="113"><method assemblyName="IronTuring" name=".ctor" token="6000001"><declaringType assemblyName="IronTuring" name="CodeGenOld" token="2000002" namespace="IronTuring"/>
+<parameter this="true" name="this" position="0"><type spec="Class"><definition assemblyName="IronTuring" name="CodeGenOld" token="2000002" namespace="IronTuring"/>
+</type>
+</parameter>
+<parameter name="stmt" position="1"><type spec="Class"><definition assemblyName="Irony" name="ParseTreeNode" token="2000052" namespace="Irony.Parsing"/>
+</type>
+</parameter>
+<parameter name="moduleName" position="2"><type spec="Class"><definition assemblyName="mscorlib" name="String" token="200004e" namespace="System"/>
+</type>
+</parameter>
+</method>
+<beforeSource><![CDATA[            throw new System.Exception("can only output into current directory!");
+        }
+]]></beforeSource>
+<source><![CDATA[        AssemblyName name = new AssemblyName(Path.GetFileNameWithoutExtension(moduleName));]]></source>
+<afterSource><![CDATA[        AssemblyBuilder asmb = System.AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.Save);
+        ModuleBuilder modb = asmb.DefineDynamicModule(moduleName);
+        mainProgram = modb.DefineType("Program");]]></afterSource>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="b3a806c0-362e-4ba1-bf3c-d929f73c946c"/>
+</tag>
+</frameNode>
+<frameNode><frame value="  at CodeGen..ctor(ParseTreeNode, String) in C:\skydrive\programming\IronTuring\IronTuring\CodeGen.cs(25)" method="CodeGen..ctor(ParseTreeNode, String)" offset="47" file="C:\skydrive\programming\IronTuring\IronTuring\CodeGen.cs" line="25"><method assemblyName="IronTuring" name=".ctor" token="600000f"><declaringType assemblyName="IronTuring" name="CodeGen" token="2000006" namespace="IronTuring"/>
+<parameter this="true" name="this" position="0"><type spec="Class"><definition assemblyName="IronTuring" name="CodeGen" token="2000006" namespace="IronTuring"/>
+</type>
+</parameter>
+<parameter name="stmt" position="1"><type spec="Class"><definition assemblyName="Irony" name="ParseTreeNode" token="2000052" namespace="Irony.Parsing"/>
+</type>
+</parameter>
+<parameter name="moduleName" position="2"><type spec="Class"><definition assemblyName="mscorlib" name="String" token="200004e" namespace="System"/>
+</type>
+</parameter>
+</method>
+<beforeSource><![CDATA[                throw new System.Exception("can only output into current directory!");
+            }
+]]></beforeSource>
+<source><![CDATA[            AssemblyName name = new AssemblyName(Path.GetFileNameWithoutExtension(moduleName));]]></source>
+<afterSource><![CDATA[            
+            asmb = System.AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.Save);
+            ]]></afterSource>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="c6a7f04f-e0c2-4ff5-8c3c-5b00d936067a"/>
+</tag>
+</frameNode>
+</frameNode>
+</frameException>
+<frameException type="System.ArgumentException"><tag exceptionState="unexpected"><generatedTestRef idref="ee38d3fd-33ab-4810-ba5d-df2349f76a8b"/>
+</tag>
+<frameNode><frame value="  at AssemblyName..ctor(String)" method="AssemblyName..ctor(String)" offset="52"><method assemblyName="mscorlib" name=".ctor" token="600269e"><declaringType assemblyName="mscorlib" name="AssemblyName" token="2000400" namespace="System.Reflection"/>
+<parameter this="true" name="this" position="0"><type spec="Class"><definition assemblyName="mscorlib" name="AssemblyName" token="2000400" namespace="System.Reflection"/>
+</type>
+</parameter>
+<parameter name="assemblyName" position="1"><type spec="Class"><definition assemblyName="mscorlib" name="String" token="200004e" namespace="System"/>
+</type>
+</parameter>
+</method>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="ee38d3fd-33ab-4810-ba5d-df2349f76a8b"/>
+<generatedTestRef idref="27536f52-475a-4f50-85a2-a6d74f6c5d0b"/>
+</tag>
+<frameNode><frame value="  at CodeGenOld..ctor(ParseTreeNode, String) in C:\skydrive\programming\IronTuring\IronTuring\CodeGenOld.cs(113)" method="CodeGenOld..ctor(ParseTreeNode, String)" offset="58" file="C:\skydrive\programming\IronTuring\IronTuring\CodeGenOld.cs" line="113"><method assemblyName="IronTuring" name=".ctor" token="6000001"><declaringType assemblyName="IronTuring" name="CodeGenOld" token="2000002" namespace="IronTuring"/>
+<parameter this="true" name="this" position="0"><type spec="Class"><definition assemblyName="IronTuring" name="CodeGenOld" token="2000002" namespace="IronTuring"/>
+</type>
+</parameter>
+<parameter name="stmt" position="1"><type spec="Class"><definition assemblyName="Irony" name="ParseTreeNode" token="2000052" namespace="Irony.Parsing"/>
+</type>
+</parameter>
+<parameter name="moduleName" position="2"><type spec="Class"><definition assemblyName="mscorlib" name="String" token="200004e" namespace="System"/>
+</type>
+</parameter>
+</method>
+<beforeSource><![CDATA[            throw new System.Exception("can only output into current directory!");
+        }
+]]></beforeSource>
+<source><![CDATA[        AssemblyName name = new AssemblyName(Path.GetFileNameWithoutExtension(moduleName));]]></source>
+<afterSource><![CDATA[        AssemblyBuilder asmb = System.AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.Save);
+        ModuleBuilder modb = asmb.DefineDynamicModule(moduleName);
+        mainProgram = modb.DefineType("Program");]]></afterSource>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="ee38d3fd-33ab-4810-ba5d-df2349f76a8b"/>
+</tag>
+</frameNode>
+<frameNode><frame value="  at CodeGen..ctor(ParseTreeNode, String) in C:\skydrive\programming\IronTuring\IronTuring\CodeGen.cs(25)" method="CodeGen..ctor(ParseTreeNode, String)" offset="47" file="C:\skydrive\programming\IronTuring\IronTuring\CodeGen.cs" line="25"><method assemblyName="IronTuring" name=".ctor" token="600000f"><declaringType assemblyName="IronTuring" name="CodeGen" token="2000006" namespace="IronTuring"/>
+<parameter this="true" name="this" position="0"><type spec="Class"><definition assemblyName="IronTuring" name="CodeGen" token="2000006" namespace="IronTuring"/>
+</type>
+</parameter>
+<parameter name="stmt" position="1"><type spec="Class"><definition assemblyName="Irony" name="ParseTreeNode" token="2000052" namespace="Irony.Parsing"/>
+</type>
+</parameter>
+<parameter name="moduleName" position="2"><type spec="Class"><definition assemblyName="mscorlib" name="String" token="200004e" namespace="System"/>
+</type>
+</parameter>
+</method>
+<beforeSource><![CDATA[                throw new System.Exception("can only output into current directory!");
+            }
+]]></beforeSource>
+<source><![CDATA[            AssemblyName name = new AssemblyName(Path.GetFileNameWithoutExtension(moduleName));]]></source>
+<afterSource><![CDATA[            
+            asmb = System.AppDomain.CurrentDomain.DefineDynamicAssembly(name, AssemblyBuilderAccess.Save);
+            ]]></afterSource>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="27536f52-475a-4f50-85a2-a6d74f6c5d0b"/>
+</tag>
+</frameNode>
+</frameNode>
+</frameException>
+<frameException type="System.NullReferenceException"><tag exceptionState="unexpected"><generatedTestRef idref="8f567543-3a39-49ba-bb7d-7289da8c191f"/>
+</tag>
+<frameNode><frame value="  at CodeGen.TypeOfExpr(ParseTreeNode, SymbolTable) in C:\skydrive\programming\IronTuring\IronTuring\CodeGen.cs(664)" method="CodeGen.TypeOfExpr(ParseTreeNode, SymbolTable)" offset="2" file="C:\skydrive\programming\IronTuring\IronTuring\CodeGen.cs" line="664"><method assemblyName="IronTuring" name="TypeOfExpr" static="true" token="6000016"><declaringType assemblyName="IronTuring" name="CodeGen" token="2000006" namespace="IronTuring"/>
+<parameter name="expr" position="0"><type spec="Class"><definition assemblyName="Irony" name="ParseTreeNode" token="2000052" namespace="Irony.Parsing"/>
+</type>
+</parameter>
+<parameter name="symbolTable" position="1"><type spec="Class"><definition assemblyName="IronTuring" name="SymbolTable" token="200000c" namespace="IronTuring"/>
+</type>
+</parameter>
+<resultType spec="Class"><definition assemblyName="mscorlib" name="Type" token="2000130" namespace="System"/>
+</resultType>
+</method>
+<beforeSource><![CDATA[
+        static public Type TypeOfExpr(ParseTreeNode expr, SymbolTable symbolTable)
+        {]]></beforeSource>
+<source><![CDATA[            if (expr.Term.Name == "stringLiteral")]]></source>
+<afterSource><![CDATA[            {
+                return typeof(string);
+            }]]></afterSource>
+</frame>
+<tag exceptionState="unexpected"><generatedTestRef idref="8f567543-3a39-49ba-bb7d-7289da8c191f"/>
+<generatedTestRef idref="6b0caa82-9eba-4633-b3ae-8dcaa8b1eb81"/>
+<generatedTestRef idref="e2b76459-20e1-49e6-b601-28ef9537f291"/>
+<generatedTestRef idref="e8583b7e-1d65-4472-94bf-818928f87b84"/>
+<generatedTestRef idref="08031054-e729-4610-b821-c97b4cc35212"/>
+<generatedTestRef idref="469fb0e9-4a96-46bb-99b5-231c060be97f"/>
+<generatedTestRef idref="a2795915-a119-4a62-892a-17861bad7cf5"/>
+</tag>
+</frameNode>
+</frameException>
+</frameTree>

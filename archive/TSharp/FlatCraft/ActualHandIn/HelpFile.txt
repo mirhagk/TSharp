@@ -1,0 +1,57 @@
+~~~~~~~~~~Controls~~~~~~~~~
+These are semi-customizable in the Options section in the main menu and the pause menu.
+A - Move Left
+D - Move Right
+SpaceBar - Jump
+E - Inventory
+1-9 - Select hotbar item
+Left Click - Attack/Break
+Right Click - Use/Place
+ESC - Pause menu
+
+~~~~~~~~~~Modifying textures~~~~~~~~~~
+All images are located in the "images" folder.
+You can modify them, but you must make sure that you dont modify the size of the files/textures, or the positions of items.
+Being so, you can use files from Minecraft texture packs in this game as they are loaded the same, except fire.gif.
+If you modify terrain.gif or items.gif, you will need to run the ApplyTexturePack.exe file to apply the changes.
+
+~~~~~~~~~~Modifying audio~~~~~~~~~~
+You can modify the audio, as long as you dont modify the name, filetype and extension.
+
+~~~~~~~~~~Adding/Modifying blocks and items~~~~~~~~~~
+There are 2 files in the datafiles folder called blocks.txt and tools.txt. You can modify both but if adding an item/block you must run the ApplyTexturePack.exe
+
+Blocks.txt : Contains the information about all blocks, these are textures retrieved from the terrain file. You can copy and paste a section to create a new one.
+	ID = The unique id for the block
+	X = the leftmost x pixel position in the texture file
+	Y = the bottommost y pixel position in the texture file
+	Name = The name that will be displayed on mouseover in the inventory
+	Hardness = How much time in milliseconds it takes to break the block with your fist
+	Weakness = The tool type that destroys the block more efficiently, 0:no best tool, 1:pickaxe, 2:shovel, 3:axe, 4:sword
+	ToolTypeRequired = Whether or not the block requires the tool to drop an entity (True or False)
+	Tool = Whether or not the block is a tool, this is always false, so just dont touch it.
+IMPORTANT: You must update the number of items in NumBlocks.txt for the addition of blocks or its texture won't be loaded.
+You can then either create a recipe for this or modify the level file of your save to include the item.
+Lines 9 and on are the inventory items, arraged as ID\nAmount\nID\nAmount etc.
+
+Items.txt : Contains all the information about the items, these are textures from the items.gif file. You can use the same process as blocks for these items to add them.
+	ID = The unique id for the item
+	X = the leftmost x pixel position in the texture file
+	Y = the bottommost y pixel position in the texture file
+	Name = The name that will be displayed on mouseover in the inventory
+	strength = The multiplier of how much faster it breaks the item/kills zombies
+	tooltype = Which tooltype it is 0:not a tool, 1:pickaxe, 2:shovel, 3:axe, 4:sword
+	tool = Whether or not its a tool
+	durability = How many uses it can withstand before breaking
+	placable = Whether or not it can be placed into the world (As a block), it is inverted (1 = not placable, 0 = placable)
+
+~~~~~~~~~~Adding/Modifying crafting recipes~~~~~~~~~~
+There are 2 files for recipes, recipes.txt and recipes2x2.txt, the first is for the crafting table, and the second is for the inventory crafting.
+They are arranged the same except the crafting table has an extra row and column.
+You can modify these, they are in the format of:
+	[ID][ID][ID]
+	[ID][ID][ID]
+	[ID][ID][ID]
+	[Output ID]
+	[Output Amount]
+For 2x2 its the same minus a row and column of IDs

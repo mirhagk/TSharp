@@ -1,0 +1,5 @@
+problems:
+
+1. function calls without parenthesis are treated as identifiers by the parser. It is then up to the compiler/scripter to ensure that it is a function call (and transform it into one)
+
+2. not= is not supported in an "exit when" statement without enclosing in parenthesis. ~= and != work fine, and not= works fine in if statements.

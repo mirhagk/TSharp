@@ -1,0 +1,7 @@
+C:\skyDrive\programming\TuringSample\TuringSample\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\skyDrive\programming\TuringSample\TuringSample\bin\Debug\TuringSample.exe
+C:\skyDrive\programming\TuringSample\TuringSample\bin\Debug\TuringSample.pdb
+C:\skyDrive\programming\TuringSample\TuringSample\bin\Debug\TuringDotNet.dll
+C:\skyDrive\programming\TuringSample\TuringSample\bin\Debug\TuringDotNet.pdb
+C:\skyDrive\programming\TuringSample\TuringSample\obj\x86\Debug\TuringSample.exe
+C:\skyDrive\programming\TuringSample\TuringSample\obj\x86\Debug\TuringSample.pdb

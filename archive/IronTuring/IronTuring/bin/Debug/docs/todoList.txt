@@ -1,0 +1,11 @@
+goal:
+compile jonathan's turing version of minecraft
+compile forces
+make external libraries work (modify import)
+make tuples(anonymous types really)
+i/o work with databases
+go through list of things to change, changing useful ones
+make somewhat backwards compatible
+make backwards compatibility mode
+make upgrade program
+make scripting language into VATS (interpreted? compiled?)

@@ -1,0 +1,7 @@
+C:\skyDrive\programming\TSharpCompiler\TSharpCompiler\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\skyDrive\programming\TSharpCompiler\TSharpCompiler\bin\Debug\TSharpCompiler.exe
+C:\skyDrive\programming\TSharpCompiler\TSharpCompiler\bin\Debug\TSharpCompiler.pdb
+C:\skyDrive\programming\TSharpCompiler\TSharpCompiler\obj\x86\Debug\TSharpCompiler.exe
+C:\skyDrive\programming\TSharpCompiler\TSharpCompiler\obj\x86\Debug\TSharpCompiler.pdb
+C:\Users\mirhagk\SkyDrive\programming\TSharpCompiler\TSharpCompiler\obj\x86\Debug\TSharpCompiler.exe
+C:\Users\mirhagk\SkyDrive\programming\TSharpCompiler\TSharpCompiler\obj\x86\Debug\TSharpCompiler.pdb

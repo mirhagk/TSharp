@@ -1,0 +1,5 @@
+C:\SkyDrive\programming\TSharp - 2010\TuringDotNet\bin\Debug\TuringDotNet.dll
+C:\SkyDrive\programming\TSharp - 2010\TuringDotNet\bin\Debug\TuringDotNet.pdb
+C:\SkyDrive\programming\TSharp - 2010\TuringDotNet\obj\Debug\ResolveAssemblyReference.cache
+C:\SkyDrive\programming\TSharp - 2010\TuringDotNet\obj\Debug\TuringDotNet.dll
+C:\SkyDrive\programming\TSharp - 2010\TuringDotNet\obj\Debug\TuringDotNet.pdb

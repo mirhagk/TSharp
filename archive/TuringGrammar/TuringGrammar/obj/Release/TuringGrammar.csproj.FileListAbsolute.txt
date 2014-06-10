@@ -1,0 +1,7 @@
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Release\TuringGrammar.dll
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Release\TuringGrammar.pdb
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Release\Irony.dll
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\bin\Release\Irony.pdb
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Release\TuringGrammar.csprojResolveAssemblyReference.cache
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Release\TuringGrammar.dll
+C:\Users\mirhagk\SkyDrive\programming\TuringGrammar\TuringGrammar\obj\Release\TuringGrammar.pdb

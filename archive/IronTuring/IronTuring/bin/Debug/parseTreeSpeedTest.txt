@@ -1,0 +1,1486 @@
+unit
+  importSection
+  program
+    statement
+      variableDeclaration
+        const (Keyword)
+        identifierList
+          its (identifier)
+        setEqual
+          := (Key symbol)
+          200000 (number)
+    program
+      statement
+        type
+          Body (identifier)
+          typeSpecifier
+            varType
+              recordList
+                identifierList
+                  x (identifier)
+                  identifierList
+                    y (identifier)
+                    identifierList
+                      z (identifier)
+                      identifierList
+                        vx (identifier)
+                        identifierList
+                          vy (identifier)
+                          identifierList
+                            vz (identifier)
+                            identifierList
+                              mass (identifier)
+                typeSpecifier
+                  varType
+                    real (Keyword)
+                recordList
+      program
+        statement
+          variableDeclaration
+            const (Keyword)
+            identifierList
+              pi (identifier)
+            setEqual
+              := (Key symbol)
+              3.14159265358979 (number)
+        program
+          statement
+            variableDeclaration
+              var (Keyword)
+              identifierList
+                solarMass (identifier)
+              setEqual
+                := (Key symbol)
+                binExpr
+                  4 (number)
+                  * (Key symbol)
+                  binExpr
+                    pi (identifier)
+                    ** (Key symbol)
+                    2 (number)
+          program
+            statement
+              variableDeclaration
+                const (Keyword)
+                identifierList
+                  daysPerYear (identifier)
+                setEqual
+                  := (Key symbol)
+                  365.24 (number)
+            program
+              statement
+                variableDeclaration
+                  var (Keyword)
+                  identifierList
+                    b (identifier)
+                  typeSpecifier
+                    varType
+                      array (Keyword)
+                      range
+                        1 (number)
+                        5 (number)
+                      of (Keyword)
+                      varType
+                        Body (identifier)
+              program
+                statement
+                  variableDeclaration
+                    var (Keyword)
+                    identifierList
+                      sun (identifier)
+                      identifierList
+                        jupiter (identifier)
+                        identifierList
+                          saturn (identifier)
+                          identifierList
+                            uranus (identifier)
+                            identifierList
+                              neptune (identifier)
+                    typeSpecifier
+                      varType
+                        Body (identifier)
+                program
+                  statement
+                    assignment
+                      memberCall
+                        sun (identifier)
+                        x (identifier)
+                      setEqual
+                        := (Key symbol)
+                        0 (number)
+                  program
+                    statement
+                      assignment
+                        memberCall
+                          sun (identifier)
+                          y (identifier)
+                        setEqual
+                          := (Key symbol)
+                          0 (number)
+                    program
+                      statement
+                        assignment
+                          memberCall
+                            sun (identifier)
+                            z (identifier)
+                          setEqual
+                            := (Key symbol)
+                            0 (number)
+                      program
+                        statement
+                          assignment
+                            memberCall
+                              sun (identifier)
+                              vx (identifier)
+                            setEqual
+                              := (Key symbol)
+                              0 (number)
+                        program
+                          statement
+                            assignment
+                              memberCall
+                                sun (identifier)
+                                vy (identifier)
+                              setEqual
+                                := (Key symbol)
+                                0 (number)
+                          program
+                            statement
+                              assignment
+                                memberCall
+                                  sun (identifier)
+                                  vz (identifier)
+                                setEqual
+                                  := (Key symbol)
+                                  0 (number)
+                            program
+                              statement
+                                assignment
+                                  memberCall
+                                    sun (identifier)
+                                    mass (identifier)
+                                  setEqual
+                                    := (Key symbol)
+                                    solarMass (identifier)
+                              program
+                                statement
+                                  assignment
+                                    functionCall
+                                      b (identifier)
+                                      args
+                                        1 (number)
+                                    setEqual
+                                      := (Key symbol)
+                                      sun (identifier)
+                                program
+                                  statement
+                                    assignment
+                                      memberCall
+                                        jupiter (identifier)
+                                        x (identifier)
+                                      setEqual
+                                        := (Key symbol)
+                                        4.84143144246472 (number)
+                                  program
+                                    statement
+                                      assignment
+                                        memberCall
+                                          jupiter (identifier)
+                                          y (identifier)
+                                        setEqual
+                                          := (Key symbol)
+                                          unExpr
+                                            unOp
+                                              - (Key symbol)
+                                            1.16032004402743 (number)
+                                    program
+                                      statement
+                                        assignment
+                                          memberCall
+                                            jupiter (identifier)
+                                            z (identifier)
+                                          setEqual
+                                            := (Key symbol)
+                                            unExpr
+                                              unOp
+                                                - (Key symbol)
+                                              0.103622044471123 (number)
+                                      program
+                                        statement
+                                          assignment
+                                            memberCall
+                                              jupiter (identifier)
+                                              vx (identifier)
+                                            setEqual
+                                              := (Key symbol)
+                                              binExpr
+                                                0.00166007664274404 (number)
+                                                * (Key symbol)
+                                                daysPerYear (identifier)
+                                        program
+                                          statement
+                                            assignment
+                                              memberCall
+                                                jupiter (identifier)
+                                                vy (identifier)
+                                              setEqual
+                                                := (Key symbol)
+                                                binExpr
+                                                  0.0076990111841974 (number)
+                                                  * (Key symbol)
+                                                  daysPerYear (identifier)
+                                          program
+                                            statement
+                                              assignment
+                                                memberCall
+                                                  jupiter (identifier)
+                                                  vz (identifier)
+                                                setEqual
+                                                  := (Key symbol)
+                                                  unExpr
+                                                    unOp
+                                                      - (Key symbol)
+                                                    binExpr
+                                                      6.90460016972063E-05 (number)
+                                                      * (Key symbol)
+                                                      daysPerYear (identifier)
+                                            program
+                                              statement
+                                                assignment
+                                                  memberCall
+                                                    jupiter (identifier)
+                                                    mass (identifier)
+                                                  setEqual
+                                                    := (Key symbol)
+                                                    binExpr
+                                                      0.000954791938424327 (number)
+                                                      * (Key symbol)
+                                                      solarMass (identifier)
+                                              program
+                                                statement
+                                                  assignment
+                                                    functionCall
+                                                      b (identifier)
+                                                      args
+                                                        2 (number)
+                                                    setEqual
+                                                      := (Key symbol)
+                                                      jupiter (identifier)
+                                                program
+                                                  statement
+                                                    assignment
+                                                      memberCall
+                                                        saturn (identifier)
+                                                        x (identifier)
+                                                      setEqual
+                                                        := (Key symbol)
+                                                        8.34336671824458 (number)
+                                                  program
+                                                    statement
+                                                      assignment
+                                                        memberCall
+                                                          saturn (identifier)
+                                                          y (identifier)
+                                                        setEqual
+                                                          := (Key symbol)
+                                                          4.1247985641243 (number)
+                                                    program
+                                                      statement
+                                                        assignment
+                                                          memberCall
+                                                            saturn (identifier)
+                                                            z (identifier)
+                                                          setEqual
+                                                            := (Key symbol)
+                                                            unExpr
+                                                              unOp
+                                                                - (Key symbol)
+                                                              0.403523417114321 (number)
+                                                      program
+                                                        statement
+                                                          assignment
+                                                            memberCall
+                                                              saturn (identifier)
+                                                              vx (identifier)
+                                                            setEqual
+                                                              := (Key symbol)
+                                                              unExpr
+                                                                unOp
+                                                                  - (Key symbol)
+                                                                binExpr
+                                                                  0.00276742510726862 (number)
+                                                                  * (Key symbol)
+                                                                  daysPerYear (identifier)
+                                                        program
+                                                          statement
+                                                            assignment
+                                                              memberCall
+                                                                saturn (identifier)
+                                                                vy (identifier)
+                                                              setEqual
+                                                                := (Key symbol)
+                                                                binExpr
+                                                                  0.00499852801234917 (number)
+                                                                  * (Key symbol)
+                                                                  daysPerYear (identifier)
+                                                          program
+                                                            statement
+                                                              assignment
+                                                                memberCall
+                                                                  saturn (identifier)
+                                                                  vz (identifier)
+                                                                setEqual
+                                                                  := (Key symbol)
+                                                                  binExpr
+                                                                    2.30417297573764E-05 (number)
+                                                                    * (Key symbol)
+                                                                    daysPerYear (identifier)
+                                                            program
+                                                              statement
+                                                                assignment
+                                                                  memberCall
+                                                                    saturn (identifier)
+                                                                    mass (identifier)
+                                                                  setEqual
+                                                                    := (Key symbol)
+                                                                    binExpr
+                                                                      0.000285885980666131 (number)
+                                                                      * (Key symbol)
+                                                                      solarMass (identifier)
+                                                              program
+                                                                statement
+                                                                  assignment
+                                                                    functionCall
+                                                                      b (identifier)
+                                                                      args
+                                                                        3 (number)
+                                                                    setEqual
+                                                                      := (Key symbol)
+                                                                      saturn (identifier)
+                                                                program
+                                                                  statement
+                                                                    assignment
+                                                                      memberCall
+                                                                        uranus (identifier)
+                                                                        x (identifier)
+                                                                      setEqual
+                                                                        := (Key symbol)
+                                                                        12.8943695621391 (number)
+                                                                  program
+                                                                    statement
+                                                                      assignment
+                                                                        memberCall
+                                                                          uranus (identifier)
+                                                                          y (identifier)
+                                                                        setEqual
+                                                                          := (Key symbol)
+                                                                          unExpr
+                                                                            unOp
+                                                                              - (Key symbol)
+                                                                            15.1111514016986 (number)
+                                                                    program
+                                                                      statement
+                                                                        assignment
+                                                                          memberCall
+                                                                            uranus (identifier)
+                                                                            z (identifier)
+                                                                          setEqual
+                                                                            := (Key symbol)
+                                                                            unExpr
+                                                                              unOp
+                                                                                - (Key symbol)
+                                                                              0.223307578892656 (number)
+                                                                      program
+                                                                        statement
+                                                                          assignment
+                                                                            memberCall
+                                                                              uranus (identifier)
+                                                                              vx (identifier)
+                                                                            setEqual
+                                                                              := (Key symbol)
+                                                                              binExpr
+                                                                                0.00296460137564762 (number)
+                                                                                * (Key symbol)
+                                                                                daysPerYear (identifier)
+                                                                        program
+                                                                          statement
+                                                                            assignment
+                                                                              memberCall
+                                                                                uranus (identifier)
+                                                                                vy (identifier)
+                                                                              setEqual
+                                                                                := (Key symbol)
+                                                                                binExpr
+                                                                                  0.00237847173959481 (number)
+                                                                                  * (Key symbol)
+                                                                                  daysPerYear (identifier)
+                                                                          program
+                                                                            statement
+                                                                              assignment
+                                                                                memberCall
+                                                                                  uranus (identifier)
+                                                                                  vz (identifier)
+                                                                                setEqual
+                                                                                  := (Key symbol)
+                                                                                  unExpr
+                                                                                    unOp
+                                                                                      - (Key symbol)
+                                                                                    binExpr
+                                                                                      2.96589568540238E-05 (number)
+                                                                                      * (Key symbol)
+                                                                                      daysPerYear (identifier)
+                                                                            program
+                                                                              statement
+                                                                                assignment
+                                                                                  memberCall
+                                                                                    uranus (identifier)
+                                                                                    mass (identifier)
+                                                                                  setEqual
+                                                                                    := (Key symbol)
+                                                                                    binExpr
+                                                                                      4.36624404335156E-05 (number)
+                                                                                      * (Key symbol)
+                                                                                      solarMass (identifier)
+                                                                              program
+                                                                                statement
+                                                                                  assignment
+                                                                                    functionCall
+                                                                                      b (identifier)
+                                                                                      args
+                                                                                        4 (number)
+                                                                                    setEqual
+                                                                                      := (Key symbol)
+                                                                                      uranus (identifier)
+                                                                                program
+                                                                                  statement
+                                                                                    assignment
+                                                                                      memberCall
+                                                                                        neptune (identifier)
+                                                                                        x (identifier)
+                                                                                      setEqual
+                                                                                        := (Key symbol)
+                                                                                        15.3796971148509 (number)
+                                                                                  program
+                                                                                    statement
+                                                                                      assignment
+                                                                                        memberCall
+                                                                                          neptune (identifier)
+                                                                                          y (identifier)
+                                                                                        setEqual
+                                                                                          := (Key symbol)
+                                                                                          unExpr
+                                                                                            unOp
+                                                                                              - (Key symbol)
+                                                                                            25.919314609988 (number)
+                                                                                    program
+                                                                                      statement
+                                                                                        assignment
+                                                                                          memberCall
+                                                                                            neptune (identifier)
+                                                                                            z (identifier)
+                                                                                          setEqual
+                                                                                            := (Key symbol)
+                                                                                            0.179258772950371 (number)
+                                                                                      program
+                                                                                        statement
+                                                                                          assignment
+                                                                                            memberCall
+                                                                                              neptune (identifier)
+                                                                                              vx (identifier)
+                                                                                            setEqual
+                                                                                              := (Key symbol)
+                                                                                              binExpr
+                                                                                                0.00268067772490389 (number)
+                                                                                                * (Key symbol)
+                                                                                                daysPerYear (identifier)
+                                                                                        program
+                                                                                          statement
+                                                                                            assignment
+                                                                                              memberCall
+                                                                                                neptune (identifier)
+                                                                                                vy (identifier)
+                                                                                              setEqual
+                                                                                                := (Key symbol)
+                                                                                                binExpr
+                                                                                                  0.00162824170038242 (number)
+                                                                                                  * (Key symbol)
+                                                                                                  daysPerYear (identifier)
+                                                                                          program
+                                                                                            statement
+                                                                                              assignment
+                                                                                                memberCall
+                                                                                                  neptune (identifier)
+                                                                                                  vz (identifier)
+                                                                                                setEqual
+                                                                                                  := (Key symbol)
+                                                                                                  unExpr
+                                                                                                    unOp
+                                                                                                      - (Key symbol)
+                                                                                                    binExpr
+                                                                                                      9.51592254519716E-05 (number)
+                                                                                                      * (Key symbol)
+                                                                                                      daysPerYear (identifier)
+                                                                                            program
+                                                                                              statement
+                                                                                                assignment
+                                                                                                  memberCall
+                                                                                                    neptune (identifier)
+                                                                                                    mass (identifier)
+                                                                                                  setEqual
+                                                                                                    := (Key symbol)
+                                                                                                    binExpr
+                                                                                                      5.15138902046611E-05 (number)
+                                                                                                      * (Key symbol)
+                                                                                                      solarMass (identifier)
+                                                                                              program
+                                                                                                statement
+                                                                                                  assignment
+                                                                                                    functionCall
+                                                                                                      b (identifier)
+                                                                                                      args
+                                                                                                        5 (number)
+                                                                                                    setEqual
+                                                                                                      := (Key symbol)
+                                                                                                      neptune (identifier)
+                                                                                                program
+                                                                                                  statement
+                                                                                                    functionDefinition
+                                                                                                      functionHeader
+                                                                                                        procedure (Keyword)
+                                                                                                        OffsetMomentum (identifier)
+                                                                                                        optParams
+                                                                                                      program
+                                                                                                        statement
+                                                                                                          unchecked (identifier)
+                                                                                                        program
+                                                                                                          statement
+                                                                                                            variableDeclaration
+                                                                                                              var (Keyword)
+                                                                                                              identifierList
+                                                                                                                px (identifier)
+                                                                                                                identifierList
+                                                                                                                  py (identifier)
+                                                                                                                  identifierList
+                                                                                                                    pz (identifier)
+                                                                                                              typeSpecifier
+                                                                                                                varType
+                                                                                                                  real (Keyword)
+                                                                                                              setEqual
+                                                                                                                := (Key symbol)
+                                                                                                                0 (number)
+                                                                                                          program
+                                                                                                            statement
+                                                                                                              forLoop
+                                                                                                                optDecreasing
+                                                                                                                i (identifier)
+                                                                                                                range
+                                                                                                                  2 (number)
+                                                                                                                  functionCall
+                                                                                                                    upper (identifier)
+                                                                                                                    args
+                                                                                                                      b (identifier)
+                                                                                                                optIncrementBy
+                                                                                                                program
+                                                                                                                  statement
+                                                                                                                    assignment
+                                                                                                                      px (identifier)
+                                                                                                                      setEqual
+                                                                                                                        := (Key symbol)
+                                                                                                                        binExpr
+                                                                                                                          px (identifier)
+                                                                                                                          - (Key symbol)
+                                                                                                                          binExpr
+                                                                                                                            memberCall
+                                                                                                                              functionCall
+                                                                                                                                b (identifier)
+                                                                                                                                args
+                                                                                                                                  i (identifier)
+                                                                                                                              vx (identifier)
+                                                                                                                            * (Key symbol)
+                                                                                                                            memberCall
+                                                                                                                              functionCall
+                                                                                                                                b (identifier)
+                                                                                                                                args
+                                                                                                                                  i (identifier)
+                                                                                                                              mass (identifier)
+                                                                                                                  program
+                                                                                                                    statement
+                                                                                                                      assignment
+                                                                                                                        py (identifier)
+                                                                                                                        setEqual
+                                                                                                                          := (Key symbol)
+                                                                                                                          binExpr
+                                                                                                                            py (identifier)
+                                                                                                                            - (Key symbol)
+                                                                                                                            binExpr
+                                                                                                                              memberCall
+                                                                                                                                functionCall
+                                                                                                                                  b (identifier)
+                                                                                                                                  args
+                                                                                                                                    i (identifier)
+                                                                                                                                vy (identifier)
+                                                                                                                              * (Key symbol)
+                                                                                                                              memberCall
+                                                                                                                                functionCall
+                                                                                                                                  b (identifier)
+                                                                                                                                  args
+                                                                                                                                    i (identifier)
+                                                                                                                                mass (identifier)
+                                                                                                                    program
+                                                                                                                      statement
+                                                                                                                        assignment
+                                                                                                                          pz (identifier)
+                                                                                                                          setEqual
+                                                                                                                            := (Key symbol)
+                                                                                                                            binExpr
+                                                                                                                              pz (identifier)
+                                                                                                                              - (Key symbol)
+                                                                                                                              binExpr
+                                                                                                                                memberCall
+                                                                                                                                  functionCall
+                                                                                                                                    b (identifier)
+                                                                                                                                    args
+                                                                                                                                      i (identifier)
+                                                                                                                                  vz (identifier)
+                                                                                                                                * (Key symbol)
+                                                                                                                                memberCall
+                                                                                                                                  functionCall
+                                                                                                                                    b (identifier)
+                                                                                                                                    args
+                                                                                                                                      i (identifier)
+                                                                                                                                  mass (identifier)
+                                                                                                                      program
+                                                                                                            program
+                                                                                                              statement
+                                                                                                                assignment
+                                                                                                                  memberCall
+                                                                                                                    functionCall
+                                                                                                                      b (identifier)
+                                                                                                                      args
+                                                                                                                        1 (number)
+                                                                                                                    vx (identifier)
+                                                                                                                  setEqual
+                                                                                                                    := (Key symbol)
+                                                                                                                    binExpr
+                                                                                                                      px (identifier)
+                                                                                                                      / (Key symbol)
+                                                                                                                      solarMass (identifier)
+                                                                                                              program
+                                                                                                                statement
+                                                                                                                  assignment
+                                                                                                                    memberCall
+                                                                                                                      functionCall
+                                                                                                                        b (identifier)
+                                                                                                                        args
+                                                                                                                          1 (number)
+                                                                                                                      vy (identifier)
+                                                                                                                    setEqual
+                                                                                                                      := (Key symbol)
+                                                                                                                      binExpr
+                                                                                                                        py (identifier)
+                                                                                                                        / (Key symbol)
+                                                                                                                        solarMass (identifier)
+                                                                                                                program
+                                                                                                                  statement
+                                                                                                                    assignment
+                                                                                                                      memberCall
+                                                                                                                        functionCall
+                                                                                                                          b (identifier)
+                                                                                                                          args
+                                                                                                                            1 (number)
+                                                                                                                        vz (identifier)
+                                                                                                                      setEqual
+                                                                                                                        := (Key symbol)
+                                                                                                                        binExpr
+                                                                                                                          pz (identifier)
+                                                                                                                          / (Key symbol)
+                                                                                                                          solarMass (identifier)
+                                                                                                                  program
+                                                                                                      OffsetMomentum (identifier)
+                                                                                                  program
+                                                                                                    statement
+                                                                                                      functionDefinition
+                                                                                                        functionHeader
+                                                                                                          function (Keyword)
+                                                                                                          distance (identifier)
+                                                                                                          optParams
+                                                                                                            parameters
+                                                                                                              parameter
+                                                                                                                identifierList
+                                                                                                                  i (identifier)
+                                                                                                                  identifierList
+                                                                                                                    j (identifier)
+                                                                                                                typeSpecifier
+                                                                                                                  varType
+                                                                                                                    int (Keyword)
+                                                                                                          typeSpecifier
+                                                                                                            varType
+                                                                                                              real (Keyword)
+                                                                                                        program
+                                                                                                          statement
+                                                                                                            unchecked (identifier)
+                                                                                                          program
+                                                                                                            statement
+                                                                                                              result
+                                                                                                                result (Keyword)
+                                                                                                                functionCall
+                                                                                                                  sqrt (identifier)
+                                                                                                                  args
+                                                                                                                    binExpr
+                                                                                                                      binExpr
+                                                                                                                        binExpr
+                                                                                                                          binExpr
+                                                                                                                            memberCall
+                                                                                                                              functionCall
+                                                                                                                                b (identifier)
+                                                                                                                                args
+                                                                                                                                  i (identifier)
+                                                                                                                              x (identifier)
+                                                                                                                            - (Key symbol)
+                                                                                                                            memberCall
+                                                                                                                              functionCall
+                                                                                                                                b (identifier)
+                                                                                                                                args
+                                                                                                                                  j (identifier)
+                                                                                                                              x (identifier)
+                                                                                                                          ** (Key symbol)
+                                                                                                                          2 (number)
+                                                                                                                        + (Key symbol)
+                                                                                                                        binExpr
+                                                                                                                          binExpr
+                                                                                                                            memberCall
+                                                                                                                              functionCall
+                                                                                                                                b (identifier)
+                                                                                                                                args
+                                                                                                                                  i (identifier)
+                                                                                                                              y (identifier)
+                                                                                                                            - (Key symbol)
+                                                                                                                            memberCall
+                                                                                                                              functionCall
+                                                                                                                                b (identifier)
+                                                                                                                                args
+                                                                                                                                  j (identifier)
+                                                                                                                              y (identifier)
+                                                                                                                          ** (Key symbol)
+                                                                                                                          2 (number)
+                                                                                                                      + (Key symbol)
+                                                                                                                      binExpr
+                                                                                                                        binExpr
+                                                                                                                          memberCall
+                                                                                                                            functionCall
+                                                                                                                              b (identifier)
+                                                                                                                              args
+                                                                                                                                i (identifier)
+                                                                                                                            z (identifier)
+                                                                                                                          - (Key symbol)
+                                                                                                                          memberCall
+                                                                                                                            functionCall
+                                                                                                                              b (identifier)
+                                                                                                                              args
+                                                                                                                                j (identifier)
+                                                                                                                            z (identifier)
+                                                                                                                        ** (Key symbol)
+                                                                                                                        2 (number)
+                                                                                                            program
+                                                                                                        distance (identifier)
+                                                                                                    program
+                                                                                                      statement
+                                                                                                        functionDefinition
+                                                                                                          functionHeader
+                                                                                                            function (Keyword)
+                                                                                                            energy (identifier)
+                                                                                                            optParams
+                                                                                                            typeSpecifier
+                                                                                                              varType
+                                                                                                                real (Keyword)
+                                                                                                          program
+                                                                                                            statement
+                                                                                                              unchecked (identifier)
+                                                                                                            program
+                                                                                                              statement
+                                                                                                                variableDeclaration
+                                                                                                                  var (Keyword)
+                                                                                                                  identifierList
+                                                                                                                    res (identifier)
+                                                                                                                  typeSpecifier
+                                                                                                                    varType
+                                                                                                                      real (Keyword)
+                                                                                                              program
+                                                                                                                statement
+                                                                                                                  assignment
+                                                                                                                    res (identifier)
+                                                                                                                    setEqual
+                                                                                                                      := (Key symbol)
+                                                                                                                      0 (number)
+                                                                                                                program
+                                                                                                                  statement
+                                                                                                                    forLoop
+                                                                                                                      optDecreasing
+                                                                                                                      i (identifier)
+                                                                                                                      range
+                                                                                                                        1 (number)
+                                                                                                                        functionCall
+                                                                                                                          upper (identifier)
+                                                                                                                          args
+                                                                                                                            b (identifier)
+                                                                                                                      optIncrementBy
+                                                                                                                      program
+                                                                                                                        statement
+                                                                                                                          unchecked (identifier)
+                                                                                                                        program
+                                                                                                                          statement
+                                                                                                                            assignment
+                                                                                                                              res (identifier)
+                                                                                                                              setEqual
+                                                                                                                                := (Key symbol)
+                                                                                                                                binExpr
+                                                                                                                                  res (identifier)
+                                                                                                                                  + (Key symbol)
+                                                                                                                                  binExpr
+                                                                                                                                    binExpr
+                                                                                                                                      memberCall
+                                                                                                                                        functionCall
+                                                                                                                                          b (identifier)
+                                                                                                                                          args
+                                                                                                                                            i (identifier)
+                                                                                                                                        mass (identifier)
+                                                                                                                                      * (Key symbol)
+                                                                                                                                      binExpr
+                                                                                                                                        binExpr
+                                                                                                                                          binExpr
+                                                                                                                                            memberCall
+                                                                                                                                              functionCall
+                                                                                                                                                b (identifier)
+                                                                                                                                                args
+                                                                                                                                                  i (identifier)
+                                                                                                                                              vx (identifier)
+                                                                                                                                            ** (Key symbol)
+                                                                                                                                            2 (number)
+                                                                                                                                          + (Key symbol)
+                                                                                                                                          binExpr
+                                                                                                                                            memberCall
+                                                                                                                                              functionCall
+                                                                                                                                                b (identifier)
+                                                                                                                                                args
+                                                                                                                                                  i (identifier)
+                                                                                                                                              vy (identifier)
+                                                                                                                                            ** (Key symbol)
+                                                                                                                                            2 (number)
+                                                                                                                                        + (Key symbol)
+                                                                                                                                        binExpr
+                                                                                                                                          memberCall
+                                                                                                                                            functionCall
+                                                                                                                                              b (identifier)
+                                                                                                                                              args
+                                                                                                                                                i (identifier)
+                                                                                                                                            vz (identifier)
+                                                                                                                                          ** (Key symbol)
+                                                                                                                                          2 (number)
+                                                                                                                                    / (Key symbol)
+                                                                                                                                    2 (number)
+                                                                                                                          program
+                                                                                                                            statement
+                                                                                                                              forLoop
+                                                                                                                                optDecreasing
+                                                                                                                                j (identifier)
+                                                                                                                                range
+                                                                                                                                  binExpr
+                                                                                                                                    i (identifier)
+                                                                                                                                    + (Key symbol)
+                                                                                                                                    1 (number)
+                                                                                                                                  functionCall
+                                                                                                                                    upper (identifier)
+                                                                                                                                    args
+                                                                                                                                      b (identifier)
+                                                                                                                                optIncrementBy
+                                                                                                                                program
+                                                                                                                                  statement
+                                                                                                                                    assignment
+                                                                                                                                      res (identifier)
+                                                                                                                                      setEqual
+                                                                                                                                        := (Key symbol)
+                                                                                                                                        binExpr
+                                                                                                                                          res (identifier)
+                                                                                                                                          - (Key symbol)
+                                                                                                                                          binExpr
+                                                                                                                                            binExpr
+                                                                                                                                              memberCall
+                                                                                                                                                functionCall
+                                                                                                                                                  b (identifier)
+                                                                                                                                                  args
+                                                                                                                                                    i (identifier)
+                                                                                                                                                mass (identifier)
+                                                                                                                                              * (Key symbol)
+                                                                                                                                              memberCall
+                                                                                                                                                functionCall
+                                                                                                                                                  b (identifier)
+                                                                                                                                                  args
+                                                                                                                                                    j (identifier)
+                                                                                                                                                mass (identifier)
+                                                                                                                                            / (Key symbol)
+                                                                                                                                            functionCall
+                                                                                                                                              distance (identifier)
+                                                                                                                                              args
+                                                                                                                                                i (identifier)
+                                                                                                                                                j (identifier)
+                                                                                                                                  program
+                                                                                                                            program
+                                                                                                                  program
+                                                                                                                    statement
+                                                                                                                      result
+                                                                                                                        result (Keyword)
+                                                                                                                        res (identifier)
+                                                                                                                    program
+                                                                                                          energy (identifier)
+                                                                                                      program
+                                                                                                        statement
+                                                                                                          functionDefinition
+                                                                                                            functionHeader
+                                                                                                              procedure (Keyword)
+                                                                                                              advance (identifier)
+                                                                                                              optParams
+                                                                                                                parameters
+                                                                                                                  parameter
+                                                                                                                    identifierList
+                                                                                                                      dt (identifier)
+                                                                                                                    typeSpecifier
+                                                                                                                      varType
+                                                                                                                        real (Keyword)
+                                                                                                            program
+                                                                                                              statement
+                                                                                                                unchecked (identifier)
+                                                                                                              program
+                                                                                                                statement
+                                                                                                                  variableDeclaration
+                                                                                                                    var (Keyword)
+                                                                                                                    identifierList
+                                                                                                                      dx (identifier)
+                                                                                                                      identifierList
+                                                                                                                        dy (identifier)
+                                                                                                                        identifierList
+                                                                                                                          dz (identifier)
+                                                                                                                          identifierList
+                                                                                                                            mag (identifier)
+                                                                                                                    typeSpecifier
+                                                                                                                      varType
+                                                                                                                        real (Keyword)
+                                                                                                                program
+                                                                                                                  statement
+                                                                                                                    variableDeclaration
+                                                                                                                      var (Keyword)
+                                                                                                                      identifierList
+                                                                                                                        bi (identifier)
+                                                                                                                        identifierList
+                                                                                                                          bj (identifier)
+                                                                                                                      typeSpecifier
+                                                                                                                        varType
+                                                                                                                          int (Keyword)
+                                                                                                                  program
+                                                                                                                    statement
+                                                                                                                      assignment
+                                                                                                                        bi (identifier)
+                                                                                                                        setEqual
+                                                                                                                          := (Key symbol)
+                                                                                                                          1 (number)
+                                                                                                                    program
+                                                                                                                      statement
+                                                                                                                        forLoop
+                                                                                                                          optDecreasing
+                                                                                                                          i (identifier)
+                                                                                                                          range
+                                                                                                                            1 (number)
+                                                                                                                            binExpr
+                                                                                                                              functionCall
+                                                                                                                                upper (identifier)
+                                                                                                                                args
+                                                                                                                                  b (identifier)
+                                                                                                                              - (Key symbol)
+                                                                                                                              1 (number)
+                                                                                                                          optIncrementBy
+                                                                                                                          program
+                                                                                                                            statement
+                                                                                                                              assignment
+                                                                                                                                bj (identifier)
+                                                                                                                                setEqual
+                                                                                                                                  := (Key symbol)
+                                                                                                                                  bi (identifier)
+                                                                                                                            program
+                                                                                                                              statement
+                                                                                                                                variableDeclaration
+                                                                                                                                  var (Keyword)
+                                                                                                                                  identifierList
+                                                                                                                                    bbi (identifier)
+                                                                                                                                  setEqual
+                                                                                                                                    := (Key symbol)
+                                                                                                                                    functionCall
+                                                                                                                                      b (identifier)
+                                                                                                                                      args
+                                                                                                                                        bi (identifier)
+                                                                                                                              program
+                                                                                                                                statement
+                                                                                                                                  forLoop
+                                                                                                                                    optDecreasing
+                                                                                                                                    j (identifier)
+                                                                                                                                    range
+                                                                                                                                      binExpr
+                                                                                                                                        i (identifier)
+                                                                                                                                        + (Key symbol)
+                                                                                                                                        1 (number)
+                                                                                                                                      functionCall
+                                                                                                                                        upper (identifier)
+                                                                                                                                        args
+                                                                                                                                          b (identifier)
+                                                                                                                                    optIncrementBy
+                                                                                                                                    program
+                                                                                                                                      statement
+                                                                                                                                        assignment
+                                                                                                                                          bj (identifier)
+                                                                                                                                          setEqual
+                                                                                                                                            += (Key symbol)
+                                                                                                                                            1 (number)
+                                                                                                                                      program
+                                                                                                                                        statement
+                                                                                                                                          variableDeclaration
+                                                                                                                                            var (Keyword)
+                                                                                                                                            identifierList
+                                                                                                                                              bbj (identifier)
+                                                                                                                                            setEqual
+                                                                                                                                              := (Key symbol)
+                                                                                                                                              functionCall
+                                                                                                                                                b (identifier)
+                                                                                                                                                args
+                                                                                                                                                  bj (identifier)
+                                                                                                                                        program
+                                                                                                                                          statement
+                                                                                                                                            assignment
+                                                                                                                                              dx (identifier)
+                                                                                                                                              setEqual
+                                                                                                                                                := (Key symbol)
+                                                                                                                                                binExpr
+                                                                                                                                                  memberCall
+                                                                                                                                                    bbi (identifier)
+                                                                                                                                                    x (identifier)
+                                                                                                                                                  - (Key symbol)
+                                                                                                                                                  memberCall
+                                                                                                                                                    bbj (identifier)
+                                                                                                                                                    x (identifier)
+                                                                                                                                          program
+                                                                                                                                            statement
+                                                                                                                                              assignment
+                                                                                                                                                dy (identifier)
+                                                                                                                                                setEqual
+                                                                                                                                                  := (Key symbol)
+                                                                                                                                                  binExpr
+                                                                                                                                                    memberCall
+                                                                                                                                                      bbi (identifier)
+                                                                                                                                                      y (identifier)
+                                                                                                                                                    - (Key symbol)
+                                                                                                                                                    memberCall
+                                                                                                                                                      bbj (identifier)
+                                                                                                                                                      y (identifier)
+                                                                                                                                            program
+                                                                                                                                              statement
+                                                                                                                                                assignment
+                                                                                                                                                  dz (identifier)
+                                                                                                                                                  setEqual
+                                                                                                                                                    := (Key symbol)
+                                                                                                                                                    binExpr
+                                                                                                                                                      memberCall
+                                                                                                                                                        bbi (identifier)
+                                                                                                                                                        z (identifier)
+                                                                                                                                                      - (Key symbol)
+                                                                                                                                                      memberCall
+                                                                                                                                                        bbj (identifier)
+                                                                                                                                                        z (identifier)
+                                                                                                                                              program
+                                                                                                                                                statement
+                                                                                                                                                  assignment
+                                                                                                                                                    mag (identifier)
+                                                                                                                                                    setEqual
+                                                                                                                                                      := (Key symbol)
+                                                                                                                                                      binExpr
+                                                                                                                                                        dt (identifier)
+                                                                                                                                                        / (Key symbol)
+                                                                                                                                                        binExpr
+                                                                                                                                                          functionCall
+                                                                                                                                                            sqrt (identifier)
+                                                                                                                                                            args
+                                                                                                                                                              binExpr
+                                                                                                                                                                binExpr
+                                                                                                                                                                  binExpr
+                                                                                                                                                                    dx (identifier)
+                                                                                                                                                                    ** (Key symbol)
+                                                                                                                                                                    2 (number)
+                                                                                                                                                                  + (Key symbol)
+                                                                                                                                                                  binExpr
+                                                                                                                                                                    dy (identifier)
+                                                                                                                                                                    ** (Key symbol)
+                                                                                                                                                                    2 (number)
+                                                                                                                                                                + (Key symbol)
+                                                                                                                                                                binExpr
+                                                                                                                                                                  dz (identifier)
+                                                                                                                                                                  ** (Key symbol)
+                                                                                                                                                                  2 (number)
+                                                                                                                                                          * (Key symbol)
+                                                                                                                                                          binExpr
+                                                                                                                                                            binExpr
+                                                                                                                                                              binExpr
+                                                                                                                                                                dx (identifier)
+                                                                                                                                                                ** (Key symbol)
+                                                                                                                                                                2 (number)
+                                                                                                                                                              + (Key symbol)
+                                                                                                                                                              binExpr
+                                                                                                                                                                dy (identifier)
+                                                                                                                                                                ** (Key symbol)
+                                                                                                                                                                2 (number)
+                                                                                                                                                            + (Key symbol)
+                                                                                                                                                            binExpr
+                                                                                                                                                              dz (identifier)
+                                                                                                                                                              ** (Key symbol)
+                                                                                                                                                              2 (number)
+                                                                                                                                                program
+                                                                                                                                                  statement
+                                                                                                                                                    assignment
+                                                                                                                                                      memberCall
+                                                                                                                                                        functionCall
+                                                                                                                                                          b (identifier)
+                                                                                                                                                          args
+                                                                                                                                                            bi (identifier)
+                                                                                                                                                        vx (identifier)
+                                                                                                                                                      setEqual
+                                                                                                                                                        := (Key symbol)
+                                                                                                                                                        binExpr
+                                                                                                                                                          memberCall
+                                                                                                                                                            bbi (identifier)
+                                                                                                                                                            vx (identifier)
+                                                                                                                                                          - (Key symbol)
+                                                                                                                                                          binExpr
+                                                                                                                                                            binExpr
+                                                                                                                                                              dx (identifier)
+                                                                                                                                                              * (Key symbol)
+                                                                                                                                                              memberCall
+                                                                                                                                                                bbj (identifier)
+                                                                                                                                                                mass (identifier)
+                                                                                                                                                            * (Key symbol)
+                                                                                                                                                            mag (identifier)
+                                                                                                                                                  program
+                                                                                                                                                    statement
+                                                                                                                                                      assignment
+                                                                                                                                                        memberCall
+                                                                                                                                                          functionCall
+                                                                                                                                                            b (identifier)
+                                                                                                                                                            args
+                                                                                                                                                              bi (identifier)
+                                                                                                                                                          vy (identifier)
+                                                                                                                                                        setEqual
+                                                                                                                                                          := (Key symbol)
+                                                                                                                                                          binExpr
+                                                                                                                                                            memberCall
+                                                                                                                                                              bbi (identifier)
+                                                                                                                                                              vy (identifier)
+                                                                                                                                                            - (Key symbol)
+                                                                                                                                                            binExpr
+                                                                                                                                                              binExpr
+                                                                                                                                                                dy (identifier)
+                                                                                                                                                                * (Key symbol)
+                                                                                                                                                                memberCall
+                                                                                                                                                                  bbj (identifier)
+                                                                                                                                                                  mass (identifier)
+                                                                                                                                                              * (Key symbol)
+                                                                                                                                                              mag (identifier)
+                                                                                                                                                    program
+                                                                                                                                                      statement
+                                                                                                                                                        assignment
+                                                                                                                                                          memberCall
+                                                                                                                                                            functionCall
+                                                                                                                                                              b (identifier)
+                                                                                                                                                              args
+                                                                                                                                                                bi (identifier)
+                                                                                                                                                            vz (identifier)
+                                                                                                                                                          setEqual
+                                                                                                                                                            := (Key symbol)
+                                                                                                                                                            binExpr
+                                                                                                                                                              memberCall
+                                                                                                                                                                bbi (identifier)
+                                                                                                                                                                vz (identifier)
+                                                                                                                                                              - (Key symbol)
+                                                                                                                                                              binExpr
+                                                                                                                                                                binExpr
+                                                                                                                                                                  dz (identifier)
+                                                                                                                                                                  * (Key symbol)
+                                                                                                                                                                  memberCall
+                                                                                                                                                                    bbj (identifier)
+                                                                                                                                                                    mass (identifier)
+                                                                                                                                                                * (Key symbol)
+                                                                                                                                                                mag (identifier)
+                                                                                                                                                      program
+                                                                                                                                                        statement
+                                                                                                                                                          assignment
+                                                                                                                                                            memberCall
+                                                                                                                                                              functionCall
+                                                                                                                                                                b (identifier)
+                                                                                                                                                                args
+                                                                                                                                                                  bj (identifier)
+                                                                                                                                                              vx (identifier)
+                                                                                                                                                            setEqual
+                                                                                                                                                              := (Key symbol)
+                                                                                                                                                              binExpr
+                                                                                                                                                                memberCall
+                                                                                                                                                                  bbj (identifier)
+                                                                                                                                                                  vx (identifier)
+                                                                                                                                                                + (Key symbol)
+                                                                                                                                                                binExpr
+                                                                                                                                                                  binExpr
+                                                                                                                                                                    dx (identifier)
+                                                                                                                                                                    * (Key symbol)
+                                                                                                                                                                    memberCall
+                                                                                                                                                                      bbi (identifier)
+                                                                                                                                                                      mass (identifier)
+                                                                                                                                                                  * (Key symbol)
+                                                                                                                                                                  mag (identifier)
+                                                                                                                                                        program
+                                                                                                                                                          statement
+                                                                                                                                                            assignment
+                                                                                                                                                              memberCall
+                                                                                                                                                                functionCall
+                                                                                                                                                                  b (identifier)
+                                                                                                                                                                  args
+                                                                                                                                                                    bj (identifier)
+                                                                                                                                                                vy (identifier)
+                                                                                                                                                              setEqual
+                                                                                                                                                                := (Key symbol)
+                                                                                                                                                                binExpr
+                                                                                                                                                                  memberCall
+                                                                                                                                                                    bbj (identifier)
+                                                                                                                                                                    vy (identifier)
+                                                                                                                                                                  + (Key symbol)
+                                                                                                                                                                  binExpr
+                                                                                                                                                                    binExpr
+                                                                                                                                                                      dy (identifier)
+                                                                                                                                                                      * (Key symbol)
+                                                                                                                                                                      memberCall
+                                                                                                                                                                        bbi (identifier)
+                                                                                                                                                                        mass (identifier)
+                                                                                                                                                                    * (Key symbol)
+                                                                                                                                                                    mag (identifier)
+                                                                                                                                                          program
+                                                                                                                                                            statement
+                                                                                                                                                              assignment
+                                                                                                                                                                memberCall
+                                                                                                                                                                  functionCall
+                                                                                                                                                                    b (identifier)
+                                                                                                                                                                    args
+                                                                                                                                                                      bj (identifier)
+                                                                                                                                                                  vz (identifier)
+                                                                                                                                                                setEqual
+                                                                                                                                                                  := (Key symbol)
+                                                                                                                                                                  binExpr
+                                                                                                                                                                    memberCall
+                                                                                                                                                                      bbj (identifier)
+                                                                                                                                                                      vz (identifier)
+                                                                                                                                                                    + (Key symbol)
+                                                                                                                                                                    binExpr
+                                                                                                                                                                      binExpr
+                                                                                                                                                                        dz (identifier)
+                                                                                                                                                                        * (Key symbol)
+                                                                                                                                                                        memberCall
+                                                                                                                                                                          bbi (identifier)
+                                                                                                                                                                          mass (identifier)
+                                                                                                                                                                      * (Key symbol)
+                                                                                                                                                                      mag (identifier)
+                                                                                                                                                            program
+                                                                                                                                program
+                                                                                                                                  statement
+                                                                                                                                    assignment
+                                                                                                                                      bi (identifier)
+                                                                                                                                      setEqual
+                                                                                                                                        += (Key symbol)
+                                                                                                                                        1 (number)
+                                                                                                                                  program
+                                                                                                                      program
+                                                                                                                        statement
+                                                                                                                          assignment
+                                                                                                                            bi (identifier)
+                                                                                                                            setEqual
+                                                                                                                              := (Key symbol)
+                                                                                                                              1 (number)
+                                                                                                                        program
+                                                                                                                          statement
+                                                                                                                            forLoop
+                                                                                                                              optDecreasing
+                                                                                                                              i (identifier)
+                                                                                                                              range
+                                                                                                                                1 (number)
+                                                                                                                                functionCall
+                                                                                                                                  upper (identifier)
+                                                                                                                                  args
+                                                                                                                                    b (identifier)
+                                                                                                                              optIncrementBy
+                                                                                                                              program
+                                                                                                                                statement
+                                                                                                                                  variableDeclaration
+                                                                                                                                    var (Keyword)
+                                                                                                                                    identifierList
+                                                                                                                                      bbi (identifier)
+                                                                                                                                    setEqual
+                                                                                                                                      := (Key symbol)
+                                                                                                                                      functionCall
+                                                                                                                                        b (identifier)
+                                                                                                                                        args
+                                                                                                                                          bi (identifier)
+                                                                                                                                program
+                                                                                                                                  statement
+                                                                                                                                    assignment
+                                                                                                                                      memberCall
+                                                                                                                                        functionCall
+                                                                                                                                          b (identifier)
+                                                                                                                                          args
+                                                                                                                                            bi (identifier)
+                                                                                                                                        x (identifier)
+                                                                                                                                      setEqual
+                                                                                                                                        := (Key symbol)
+                                                                                                                                        binExpr
+                                                                                                                                          memberCall
+                                                                                                                                            bbi (identifier)
+                                                                                                                                            x (identifier)
+                                                                                                                                          + (Key symbol)
+                                                                                                                                          binExpr
+                                                                                                                                            dt (identifier)
+                                                                                                                                            * (Key symbol)
+                                                                                                                                            memberCall
+                                                                                                                                              bbi (identifier)
+                                                                                                                                              vx (identifier)
+                                                                                                                                  program
+                                                                                                                                    statement
+                                                                                                                                      assignment
+                                                                                                                                        memberCall
+                                                                                                                                          functionCall
+                                                                                                                                            b (identifier)
+                                                                                                                                            args
+                                                                                                                                              bi (identifier)
+                                                                                                                                          y (identifier)
+                                                                                                                                        setEqual
+                                                                                                                                          := (Key symbol)
+                                                                                                                                          binExpr
+                                                                                                                                            memberCall
+                                                                                                                                              bbi (identifier)
+                                                                                                                                              y (identifier)
+                                                                                                                                            + (Key symbol)
+                                                                                                                                            binExpr
+                                                                                                                                              dt (identifier)
+                                                                                                                                              * (Key symbol)
+                                                                                                                                              memberCall
+                                                                                                                                                bbi (identifier)
+                                                                                                                                                vy (identifier)
+                                                                                                                                    program
+                                                                                                                                      statement
+                                                                                                                                        assignment
+                                                                                                                                          memberCall
+                                                                                                                                            functionCall
+                                                                                                                                              b (identifier)
+                                                                                                                                              args
+                                                                                                                                                bi (identifier)
+                                                                                                                                            z (identifier)
+                                                                                                                                          setEqual
+                                                                                                                                            := (Key symbol)
+                                                                                                                                            binExpr
+                                                                                                                                              memberCall
+                                                                                                                                                bbi (identifier)
+                                                                                                                                                z (identifier)
+                                                                                                                                              + (Key symbol)
+                                                                                                                                              binExpr
+                                                                                                                                                dt (identifier)
+                                                                                                                                                * (Key symbol)
+                                                                                                                                                memberCall
+                                                                                                                                                  bbi (identifier)
+                                                                                                                                                  vz (identifier)
+                                                                                                                                      program
+                                                                                                                                        statement
+                                                                                                                                          assignment
+                                                                                                                                            bi (identifier)
+                                                                                                                                            setEqual
+                                                                                                                                              += (Key symbol)
+                                                                                                                                              1 (number)
+                                                                                                                                        program
+                                                                                                                          program
+                                                                                                            advance (identifier)
+                                                                                                        program
+                                                                                                          statement
+                                                                                                            OffsetMomentum (identifier)
+                                                                                                          program
+                                                                                                            statement
+                                                                                                              io
+                                                                                                                put (Keyword)
+                                                                                                                putItem
+                                                                                                                  functionCall
+                                                                                                                    energy (identifier)
+                                                                                                                    args
+                                                                                                                putItems
+                                                                                                                optionalSameLine
+                                                                                                            program
+                                                                                                              statement
+                                                                                                                variableDeclaration
+                                                                                                                  var (Keyword)
+                                                                                                                  identifierList
+                                                                                                                    start (identifier)
+                                                                                                                  setEqual
+                                                                                                                    := (Key symbol)
+                                                                                                                    memberCall
+                                                                                                                      Time (identifier)
+                                                                                                                      functionCall
+                                                                                                                        Elapsed (identifier)
+                                                                                                                        args
+                                                                                                              program
+                                                                                                                statement
+                                                                                                                  forLoop
+                                                                                                                    optDecreasing
+                                                                                                                    i (identifier)
+                                                                                                                    range
+                                                                                                                      1 (number)
+                                                                                                                      its (identifier)
+                                                                                                                    optIncrementBy
+                                                                                                                    program
+                                                                                                                      statement
+                                                                                                                        unchecked (identifier)
+                                                                                                                      program
+                                                                                                                        statement
+                                                                                                                          functionCall
+                                                                                                                            advance (identifier)
+                                                                                                                            args
+                                                                                                                              0.01 (number)
+                                                                                                                        program
+                                                                                                                program
+                                                                                                                  statement
+                                                                                                                    io
+                                                                                                                      put (Keyword)
+                                                                                                                      putItem
+                                                                                                                        functionCall
+                                                                                                                          energy (identifier)
+                                                                                                                          args
+                                                                                                                      putItems
+                                                                                                                      optionalSameLine
+                                                                                                                  program
+                                                                                                                    statement
+                                                                                                                      io
+                                                                                                                        put (Keyword)
+                                                                                                                        putItem
+                                                                                                                          took  (stringLiteral)
+                                                                                                                        putItems
+                                                                                                                          putItem
+                                                                                                                            binExpr
+                                                                                                                              binExpr
+                                                                                                                                memberCall
+                                                                                                                                  Time (identifier)
+                                                                                                                                  functionCall
+                                                                                                                                    Elapsed (identifier)
+                                                                                                                                    args
+                                                                                                                                - (Key symbol)
+                                                                                                                                start (identifier)
+                                                                                                                              / (Key symbol)
+                                                                                                                              1000 (number)
+                                                                                                                          putItems
+                                                                                                                            putItem
+                                                                                                                               seconds. (stringLiteral)
+                                                                                                                            putItems
+                                                                                                                        optionalSameLine
+                                                                                                                    program
