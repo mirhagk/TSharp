@@ -1,0 +1,6 @@
+﻿@namespace TSharp
+@classname TSharpGrammar
+
+
+Start = Statement*
+Statement = Expr | variableDeclaration | ifBlock | functionCall | functionDefinition | io | assignment | result | loop | forLoop | newer | exitLoop
