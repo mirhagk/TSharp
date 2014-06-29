@@ -3,4 +3,7 @@
 
 
 Start = Statement*
-Statement = Expr | variableDeclaration | ifBlock | functionCall | functionDefinition | io | assignment | result | loop | forLoop | newer | exitLoop
+Statement = Expr
+Expr = number
+number = [0-9]
+//Statement = Expr | variableDeclaration | ifBlock | functionCall | functionDefinition | io | assignment | result | loop | forLoop | newer | exitLoop
