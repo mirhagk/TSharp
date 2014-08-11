@@ -16,6 +16,11 @@ namespace TSharp
             var result = "";
             foreach (var item in input) result += item;
             return result;
+
+
+            
+            //SyntaxFactory.PredefinedType
+            //SyntaxFactory.V
             //SyntaxFactory.ExpressionStatement()
             //SyntaxFactory.LiteralExpression(SyntaxKind.NumericLiteralExpression
         }

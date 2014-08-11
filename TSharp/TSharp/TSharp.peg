@@ -12,7 +12,17 @@ Statement <StatementSyntax>
 Expr <ExpressionSyntax> 
 	= val:number {(val)}
 number <LiteralExpressionSyntax>
-	= val:([0-9]+) {SyntaxFactory.LiteralExpression(SyntaxKind.NumericLiteralExpression,SyntaxFactory.Literal(int.Parse(Flatten(val))))}
-varOrConst = "var" / "const"
+	= ows val:([0-9]+) ows {SyntaxFactory.LiteralExpression(SyntaxKind.NumericLiteralExpression,SyntaxFactory.Literal(int.Parse(Flatten(val))))}
+varOrConst = "var" / "const" ows
+idenList  <SeparatedSyntaxList<VariableDeclaratorSyntax>>
+	= idens:(identifier+) {SyntaxFactory.SeparatedList<VariableDeclaratorSyntax>(idens)}
+identifier <VariableDeclaratorSyntax>
+	= iden:([a-zA-Z]+) {SyntaxFactory.VariableDeclarator(Flatten(iden))}
+variableDeclaration <VariableDeclarationSyntax>
+	= varOrConst idens:idenList type:typeSpecifier { SyntaxFactory.VariableDeclaration(type,idens)}
+typeSpecifier <TypeSyntax>
+	= "int" {SyntaxFactory.ParseTypeName("int")}
+ws = [ \t\n\r]
+ows = ws*
 //variableDeclaration = varOrConst + idenList | varOrConst + idenList + setEqual | varOrConst + idenList + typeSpecifier | varOrConst + idenList + typeSpecifier + setEqual;
 //Statement = Expr | variableDeclaration | ifBlock | functionCall | functionDefinition | io | assignment | result | loop | forLoop | newer | exitLoop

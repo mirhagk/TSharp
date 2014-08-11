@@ -31,7 +31,7 @@ namespace HelloWorld
         }
     }");
 
-            var test = "123";
+            var test = "123 456";
             var root = (CompilationUnitSyntax)tree.GetRoot();
             
             WriteTree(root);
