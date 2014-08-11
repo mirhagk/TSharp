@@ -113,13 +113,16 @@ namespace
         {
             IParseResult<StatementSyntax> r0 = null;
             var startCursor0 = cursor;
-            IParseResult<string> r1 = null;
+            IParseResult<ExpressionSyntax> r1 = null;
+            var exprStart = cursor;
             r1 = this.Expr(ref cursor);
+            var exprEnd = cursor;
+            var expr = ValueOrDefault(r1);
             if (r1 != null)
             {
                 r0 = this.ReturnHelper<StatementSyntax>(startCursor0, ref cursor, state =>
                     #line 11 "TSharp.peg"
-         null
+              SyntaxFactory.ExpressionStatement(expr)
                     #line default
                     );
             }
@@ -130,17 +133,81 @@ namespace
             return r0;
         }
 
-        private IParseResult<string> Expr(ref Cursor cursor)
+        private IParseResult<
+            #line 12 "TSharp.peg"
+      ExpressionSyntax
+            #line default
+            > Expr(ref Cursor cursor)
         {
-            IParseResult<string> r0 = null;
-            r0 = this.number(ref cursor);
+            IParseResult<ExpressionSyntax> r0 = null;
+            var startCursor0 = cursor;
+            IParseResult<LiteralExpressionSyntax> r1 = null;
+            var valStart = cursor;
+            r1 = this.number(ref cursor);
+            var valEnd = cursor;
+            var val = ValueOrDefault(r1);
+            if (r1 != null)
+            {
+                r0 = this.ReturnHelper<ExpressionSyntax>(startCursor0, ref cursor, state =>
+                    #line 13 "TSharp.peg"
+               (val)
+                    #line default
+                    );
+            }
+            else
+            {
+                cursor = startCursor0;
+            }
             return r0;
         }
 
-        private IParseResult<string> number(ref Cursor cursor)
+        private IParseResult<
+            #line 14 "TSharp.peg"
+        LiteralExpressionSyntax
+            #line default
+            > number(ref Cursor cursor)
         {
-            IParseResult<string> r0 = null;
-            r0 = this.ParseClass(ref cursor, "09");
+            IParseResult<LiteralExpressionSyntax> r0 = null;
+            var startCursor0 = cursor;
+            IParseResult<IList<string>> r1 = null;
+            var valStart = cursor;
+            var startCursor1 = cursor;
+            var l0 = new List<string>();
+            while (true)
+            {
+                IParseResult<string> r2 = null;
+                r2 = this.ParseClass(ref cursor, "09");
+                if (r2 != null)
+                {
+                    l0.Add(r2.Value);
+                }
+                else
+                {
+                    break;
+                }
+            }
+            if (l0.Count >= 1)
+            {
+                r1 = this.ReturnHelper<IList<string>>(startCursor1, ref cursor, state => l0.AsReadOnly());
+            }
+            else
+            {
+                cursor = startCursor1;
+            }
+            var valEnd = cursor;
+            var val = ValueOrDefault(r1);
+            if (r1 != null)
+            {
+                r0 = this.ReturnHelper<LiteralExpressionSyntax>(startCursor0, ref cursor, state =>
+                    #line 15 "TSharp.peg"
+                 SyntaxFactory.LiteralExpression(SyntaxKind.NumericLiteralExpression,SyntaxFactory.Literal(int.Parse(Flatten(val))))
+                    #line default
+                    );
+            }
+            else
+            {
+                cursor = startCursor0;
+            }
             return r0;
         }
 

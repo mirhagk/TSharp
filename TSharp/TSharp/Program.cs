@@ -30,11 +30,14 @@ namespace HelloWorld
             }
         }
     }");
+
+            var test = "123";
             var root = (CompilationUnitSyntax)tree.GetRoot();
             
             WriteTree(root);
-            Console.ReadKey();
             TSharp.TSharpGrammar grammar = new TSharp.TSharpGrammar();
+            Console.WriteLine(grammar.Parse(test));
+            Console.ReadKey();
         }
         static string Repeat(string text, int times)
         {
