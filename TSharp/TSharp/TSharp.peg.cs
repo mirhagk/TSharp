@@ -15,6 +15,21 @@ namespace
     using System;
     using System.Collections.Generic;
     using Pegasus.Common;
+    using
+        #line 3 "TSharp.peg"
+       Microsoft.CodeAnalysis
+        #line default
+        ;
+    using
+        #line 4 "TSharp.peg"
+       Microsoft.CodeAnalysis.CSharp
+        #line default
+        ;
+    using
+        #line 5 "TSharp.peg"
+       Microsoft.CodeAnalysis.CSharp.Syntax
+        #line default
+        ;
 
     /// <summary>
     ///  Parses a string according to the rules of the <see cref="TSharpGrammar" /> grammar.
@@ -32,11 +47,11 @@ namespace
         /// </summary>
         /// <param name="subject">The parsing subject.</param>
         /// <param name="fileName">The optional file name to use in error messages.</param>
-        /// <returns>The <see cref="IList&lt;string&gt;" /> parsed from <paramref name="subject" />.</returns>
+        /// <returns>The <see cref="SyntaxNode" /> parsed from <paramref name="subject" />.</returns>
         /// <exception cref="FormatException">
         ///  Thrown when parsing fails against <paramref name="subject"/>.  The exception's <code>Data["cursor"]</code> will be set with the cursor where the fatal error occurred.
         /// </exception>
-        public IList<string> Parse(string subject, string fileName = null)
+        public SyntaxNode Parse(string subject, string fileName = null)
         {
             var cursor = new Cursor(subject, 0, fileName);
             var result = this.Start(ref cursor);
@@ -47,32 +62,71 @@ namespace
             return result.Value;
         }
 
-        private IParseResult<IList<string>> Start(ref Cursor cursor)
+        private IParseResult<
+            #line 8 "TSharp.peg"
+       SyntaxNode
+            #line default
+            > Start(ref Cursor cursor)
         {
-            IParseResult<IList<string>> r0 = null;
+            IParseResult<SyntaxNode> r0 = null;
             var startCursor0 = cursor;
-            var l0 = new List<string>();
+            IParseResult<IList<StatementSyntax>> r1 = null;
+            var statementsStart = cursor;
+            var startCursor1 = cursor;
+            var l0 = new List<StatementSyntax>();
             while (true)
             {
-                IParseResult<string> r1 = null;
-                r1 = this.Statement(ref cursor);
-                if (r1 != null)
+                IParseResult<StatementSyntax> r2 = null;
+                r2 = this.Statement(ref cursor);
+                if (r2 != null)
                 {
-                    l0.Add(r1.Value);
+                    l0.Add(r2.Value);
                 }
                 else
                 {
                     break;
                 }
             }
-            r0 = this.ReturnHelper<IList<string>>(startCursor0, ref cursor, state => l0.AsReadOnly());
+            r1 = this.ReturnHelper<IList<StatementSyntax>>(startCursor1, ref cursor, state => l0.AsReadOnly());
+            var statementsEnd = cursor;
+            var statements = ValueOrDefault(r1);
+            if (r1 != null)
+            {
+                r0 = this.ReturnHelper<SyntaxNode>(startCursor0, ref cursor, state =>
+                    #line 9 "TSharp.peg"
+                            SyntaxFactory.Block(statements)
+                    #line default
+                    );
+            }
+            else
+            {
+                cursor = startCursor0;
+            }
             return r0;
         }
 
-        private IParseResult<string> Statement(ref Cursor cursor)
+        private IParseResult<
+            #line 10 "TSharp.peg"
+           StatementSyntax
+            #line default
+            > Statement(ref Cursor cursor)
         {
-            IParseResult<string> r0 = null;
-            r0 = this.Expr(ref cursor);
+            IParseResult<StatementSyntax> r0 = null;
+            var startCursor0 = cursor;
+            IParseResult<string> r1 = null;
+            r1 = this.Expr(ref cursor);
+            if (r1 != null)
+            {
+                r0 = this.ReturnHelper<StatementSyntax>(startCursor0, ref cursor, state =>
+                    #line 11 "TSharp.peg"
+         null
+                    #line default
+                    );
+            }
+            else
+            {
+                cursor = startCursor0;
+            }
             return r0;
         }
 
@@ -87,6 +141,20 @@ namespace
         {
             IParseResult<string> r0 = null;
             r0 = this.ParseClass(ref cursor, "09");
+            return r0;
+        }
+
+        private IParseResult<string> varOrConst(ref Cursor cursor)
+        {
+            IParseResult<string> r0 = null;
+            if (r0 == null)
+            {
+                r0 = this.ParseLiteral(ref cursor, "var");
+            }
+            if (r0 == null)
+            {
+                r0 = this.ParseLiteral(ref cursor, "const");
+            }
             return r0;
         }
 

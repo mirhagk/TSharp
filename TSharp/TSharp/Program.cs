@@ -25,15 +25,16 @@ namespace HelloWorld
         {
             static void Main(string[] args)
             {
+                var x = 1 + 1;
                 Console.WriteLine(""Hello, World!"");
             }
         }
     }");
-
             var root = (CompilationUnitSyntax)tree.GetRoot();
             
             WriteTree(root);
             Console.ReadKey();
+            TSharp.TSharpGrammar grammar = new TSharp.TSharpGrammar();
         }
         static string Repeat(string text, int times)
         {

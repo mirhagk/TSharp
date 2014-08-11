@@ -1,9 +1,16 @@
 ﻿@namespace TSharp
 @classname TSharpGrammar
+@using Microsoft.CodeAnalysis;
+@using Microsoft.CodeAnalysis.CSharp;
+@using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 
-Start = Statement*
-Statement = Expr
+Start <SyntaxNode>
+	= statements:(Statement*) {SyntaxFactory.Block(statements)}
+Statement <StatementSyntax>
+	= Expr {null}
 Expr = number
 number = [0-9]
+varOrConst = "var" / "const"
+//variableDeclaration = varOrConst + idenList | varOrConst + idenList + setEqual | varOrConst + idenList + typeSpecifier | varOrConst + idenList + typeSpecifier + setEqual;
 //Statement = Expr | variableDeclaration | ifBlock | functionCall | functionDefinition | io | assignment | result | loop | forLoop | newer | exitLoop
