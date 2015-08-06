@@ -136,6 +136,8 @@ namespace IronTuring
             {
                 meth.DefineParameter(i + 1, ParameterAttributes.In, parameters[i].argName);
             }
+            var function = new FunctionDefinition(meth, parameters.ToList());
+            functionTable.AddHeader(functionName, function);           
         }
     }
     public class TypeTable
@@ -155,7 +157,10 @@ namespace IronTuring
         {
             get
             {
-                return typeTable.types.Where(x => x.type.Name == "__Program").First().functionTable;
+                var programType = typeTable.types.SingleOrDefault(t => t.type.Name == "__Program");
+                if (programType != null)
+                    return programType.functionTable;
+                return parentTable.functionTable;
             }
         }
         public SymbolTable(TypeBuilder mainClass)
@@ -276,7 +281,8 @@ namespace IronTuring
 
         internal void AddFunctionHeader(string functionName, MethodAttributes methodAttributes, Type returnType, FunctionDefinition.Argument[] parameters, string typeName="__Program")
         {
-            typeTable.types.Where(x => x.type.Name == typeName).First().AddFunctionHeader(functionName, methodAttributes, returnType, parameters);
+            var type = typeTable.types.Single(x => x.type.Name == typeName);
+            type.AddFunctionHeader(functionName, methodAttributes, returnType, parameters);
             //throw new NotImplementedException();
         }
     }

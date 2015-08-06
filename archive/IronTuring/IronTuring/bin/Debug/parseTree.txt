@@ -1,62 +1,233 @@
 unit
   importSection
-    import
-      memberCall
-        TuringDotNet (identifier)
-        Window (identifier)
-      TuringDotNet.dll (stringLiteral)
-    import
-      memberCall
-        TuringDotNet (identifier)
-        Draw (identifier)
-      TuringDotNet.dll (stringLiteral)
-    import
-      memberCall
-        System (identifier)
-        memberCall
-          Drawing (identifier)
-          Color (identifier)
-      System.Drawing.dll (stringLiteral)
   program
     statement
-      forLoop
-        optDecreasing
-        i (identifier)
-        range
-          1 (number)
-          10 (number)
-        optIncrementBy
-        program
+      variableDeclaration
+        var (Keyword)
+        identifierList
+          num (identifier)
+        setEqual
+          := (Key symbol)
+          binExpr
+            binExpr
+              5 (number)
+              + (Key symbol)
+              5 (number)
+            - (Key symbol)
+            binExpr
+              5 (number)
+              * (Key symbol)
+              5 (number)
     program
       statement
-        memberCall
-          TuringDotNet (identifier)
-          memberCall
-            Window (identifier)
-            functionCall
-              Open (identifier)
-              args
-                graphics:500;500 (stringLiteral)
+        io
+          put (Keyword)
+          putItem
+            num (identifier)
+          putItems
+            putItem
+              6 (number)
+            putItems
+          optionalSameLine
       program
         statement
-          memberCall
-            TuringDotNet (identifier)
-            memberCall
-              Draw (identifier)
-              functionCall
-                FillOval (identifier)
-                args
-                  100 (number)
-                  100 (number)
-                  50 (number)
-                  50 (number)
-                  memberCall
-                    System (identifier)
-                    memberCall
-                      Drawing (identifier)
-                      memberCall
-                        Color (identifier)
-                        functionCall
-                          get_Black (identifier)
-                          args
+          variableDeclaration
+            var (Keyword)
+            identifierList
+              name (identifier)
+            typeSpecifier
+              varType
+                string (Keyword)
         program
+          statement
+            variableDeclaration
+              var (Keyword)
+              identifierList
+                price (identifier)
+              typeSpecifier
+                varType
+                  real (Keyword)
+              setEqual
+                := (Key symbol)
+                5.01 (number)
+          program
+            statement
+              variableDeclaration
+                var (Keyword)
+                identifierList
+                  things (identifier)
+                typeSpecifier
+                  varType
+                    array (Keyword)
+                    range
+                      0 (number)
+                      9 (number)
+                    of (Keyword)
+                    varType
+                      array (Keyword)
+                      range
+                        0 (number)
+                        9 (number)
+                      of (Keyword)
+                      varType
+                        int (Keyword)
+            program
+              statement
+                io
+                  put (Keyword)
+                  putItem
+                    price (identifier)
+                  putItems
+                    putItem
+                        (stringLiteral)
+                    putItems
+                  optionalSameLine
+              program
+                statement
+                  assignment
+                    price (identifier)
+                    setEqual
+                      := (Key symbol)
+                      binExpr
+                        price (identifier)
+                        * (Key symbol)
+                        2 (number)
+                program
+                  statement
+                    io
+                      put (Keyword)
+                      putItem
+                        price (identifier)
+                      putItems
+                      optionalSameLine
+                  program
+                    statement
+                      functionDefinition
+                        functionHeader
+                          function (Keyword)
+                          fact (identifier)
+                          optParams
+                            parameters
+                              parameter
+                                identifierList
+                                  num (identifier)
+                                typeSpecifier
+                                  varType
+                                    int (Keyword)
+                          typeSpecifier
+                            varType
+                              int (Keyword)
+                        program
+                          statement
+                            ifBlock
+                              binExpr
+                                num (identifier)
+                                <= (Key symbol)
+                                1 (number)
+                              program
+                                statement
+                                  result
+                                    result (Keyword)
+                                    1 (number)
+                                program
+                              elseIfBlock
+                              optElseBlock
+                          program
+                            statement
+                              result
+                                result (Keyword)
+                                binExpr
+                                  num (identifier)
+                                  * (Key symbol)
+                                  functionCall
+                                    fact (identifier)
+                                    args
+                                      binExpr
+                                        num (identifier)
+                                        - (Key symbol)
+                                        1 (number)
+                            program
+                        fact (identifier)
+                    program
+                      statement
+                        functionDefinition
+                          functionHeader
+                            function (Keyword)
+                            square (identifier)
+                            optParams
+                              parameters
+                                parameter
+                                  identifierList
+                                    num (identifier)
+                                  typeSpecifier
+                                    varType
+                                      int (Keyword)
+                                parameters
+                                  parameter
+                                    identifierList
+                                      unused (identifier)
+                                    typeSpecifier
+                                      varType
+                                        real (Keyword)
+                            typeSpecifier
+                              varType
+                                int (Keyword)
+                          program
+                            statement
+                              result
+                                result (Keyword)
+                                binExpr
+                                  num (identifier)
+                                  * (Key symbol)
+                                  num (identifier)
+                            program
+                          square (identifier)
+                      program
+                        statement
+                          functionDefinition
+                            functionHeader
+                              function (Keyword)
+                              doStuff (identifier)
+                              optParams
+                              typeSpecifier
+                                varType
+                                  int (Keyword)
+                            program
+                              statement
+                                io
+                                  put (Keyword)
+                                  putItem
+                                    stuff (stringLiteral)
+                                  putItems
+                                  optionalSameLine
+                              program
+                                statement
+                                  result
+                                    result (Keyword)
+                                    0 (number)
+                                program
+                            doStuff (identifier)
+                        program
+                          statement
+                            io
+                              put (Keyword)
+                              putItem
+                                functionCall
+                                  square (identifier)
+                                  args
+                                    5 (number)
+                                    5.001 (number)
+                              putItems
+                              optionalSameLine
+                          program
+                            statement
+                              io
+                                put (Keyword)
+                                putItem
+                                  functionCall
+                                    fact (identifier)
+                                    args
+                                      6 (number)
+                                putItems
+                                optionalSameLine
+                            program

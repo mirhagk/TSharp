@@ -16,3 +16,11 @@ C:\SkyDrive\programming\IronTuring\IronTuring\bin\Debug\TuringGrammar.dll
 C:\SkyDrive\programming\IronTuring\IronTuring\bin\Debug\Irony.pdb
 C:\SkyDrive\programming\IronTuring\IronTuring\bin\Debug\TuringGrammar.pdb
 C:\skydrive\programming\IronTuring\IronTuring\obj\x86\Debug\IronTuring.csprojResolveAssemblyReference.cache
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\obj\x86\Debug\IronTuring.exe
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\obj\x86\Debug\IronTuring.pdb
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\bin\Debug\IronTuring.exe
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\bin\Debug\IronTuring.pdb
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\bin\Debug\TuringGrammar.dll
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\bin\Debug\TuringGrammar.pdb
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\bin\Debug\Irony.pdb
+C:\Users\mirhagk\Documents\GitHub\tsharp\archive\IronTuring\IronTuring\obj\x86\Debug\IronTuring.csprojResolveAssemblyReference.cache

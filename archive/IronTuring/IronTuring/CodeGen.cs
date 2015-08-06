@@ -58,9 +58,11 @@ namespace IronTuring
             //il.Emit(OpCodes.Call, typeof(System.Console).GetMethod("ReadKey", new Type[] { }));
 
             il.Emit(OpCodes.Ret);
-            mainProgram.CreateType();
+            //mainProgram.CreateType();
             modb.CreateGlobalFunctions();
             asmb.SetEntryPoint(symbolTable.functionTable["__Main"].methodDefinition);
+
+            symbolTable.typeTable.types[0].typeBuilder.CreateType();
             
             asmb.Save(moduleName);
             foreach (var symbol in symbolTable.locals)
@@ -483,8 +485,8 @@ namespace IronTuring
                 }
                 else
                 {
-                    deliveredType = typeof(float);
-                    il.Emit(OpCodes.Ldc_R4, float.Parse(expr.Token.ValueString));
+                    deliveredType = typeof(double);
+                    il.Emit(OpCodes.Ldc_R8, float.Parse(expr.Token.ValueString));
                 }
             }
             else if (expr.Term.Name == "binExpr")
@@ -573,10 +575,18 @@ namespace IronTuring
                 string ident = expr.Token.ValueString;
                 symbolTable.PushVar(ident, il);
                 deliveredType = TypeOfExpr(expr, symbolTable);
+                if (deliveredType == typeof(float))
+                {
+                    throw new NotImplementedException();
+                }
             }
             else if (expr.Term.Name == "functionCall"|expr.Term.Name=="memberCall")
             {
                 deliveredType = TypeOfExpr(expr, symbolTable);
+                if (deliveredType == typeof(float))
+                {
+                    throw new NotImplementedException();
+                }
 
                 string funcName = GetIdentifier(expr);
                 if (!symbolTable.functionTable.ContainsKey(funcName))
@@ -597,11 +607,11 @@ namespace IronTuring
                 }
                 else
                 {
-                    var parameters = symbolTable.functionTable[funcName].methodDefinition.GetParameters();
+                    var parameters = symbolTable.functionTable[funcName].arguments;
                     int currentArgument = 0;
                     foreach (var arg in GetArgs(expr))//expr.ChildNodes[1].ChildNodes)
                     {
-                        this.GenExpr(arg, parameters[currentArgument].ParameterType, il, symbolTable);
+                        this.GenExpr(arg, parameters[currentArgument].argType, il, symbolTable);
                         currentArgument++;
                     }
                     il.Emit(OpCodes.Call, symbolTable.functionTable[funcName].methodDefinition);
@@ -643,9 +653,9 @@ namespace IronTuring
                     il.Emit(OpCodes.Box, typeof(int));
                     il.Emit(OpCodes.Callvirt, typeof(object).GetMethod("ToString"));
                 }
-                else if (deliveredType == typeof(float) && expectedType == typeof(string))
+                else if (deliveredType == typeof(double) && expectedType == typeof(string))
                 {
-                    il.Emit(OpCodes.Box, typeof(float));
+                    il.Emit(OpCodes.Box, typeof(double));
                     il.Emit(OpCodes.Callvirt, typeof(object).GetMethod("ToString"));
                 }
                 else if (expectedType == null)//if the expected type is null then it doesn't matter what you give it
@@ -673,7 +683,7 @@ namespace IronTuring
                 }
                 else
                 {
-                    return typeof(float);
+                    return typeof(double);
                 }
             }
             else if (expr.Term.Name == "binExpr")
