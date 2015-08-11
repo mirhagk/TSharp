@@ -131,7 +131,7 @@ namespace IronTuring
 
         internal void AddFunctionHeader(string functionName, MethodAttributes methodAttributes, Type returnType, FunctionDefinition.Argument[] parameters)
         {
-            var meth=typeBuilder.DefineMethod(functionName, methodAttributes, CallingConventions.Any, returnType, parameters.Select(x=>x.argType).ToArray());
+            var meth=typeBuilder.DefineMethod(functionName, methodAttributes, CallingConventions.Standard, returnType, parameters.Select(x=>x.argType).ToArray());
             for (int i = 0; i < parameters.Length; i++)
             {
                 meth.DefineParameter(i + 1, ParameterAttributes.In, parameters[i].argName);
