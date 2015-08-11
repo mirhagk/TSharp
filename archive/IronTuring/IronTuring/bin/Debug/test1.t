@@ -1,11 +1,11 @@
 var num := 5 + 5 - 5 * 5
-put num, 6
-var name : string
+put num, " ", 6
+/*var name : string
 var price : real := 5.01
 var things : array 0 .. 9 of array 0 .. 9 of int
 put price, " " ..
 price := price * 2.0
-put price
+put price*/
 
 function fact (num : int) : int
     if (num <= 1) then
@@ -22,5 +22,5 @@ function doStuff : int
     result 0
 end doStuff
 
-put square (5, 5.001)
+/*put square (5, 5.001)*/
 put fact (6)
